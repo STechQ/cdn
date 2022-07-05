@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+/* ------------------------------- */
+/*    PDS CSS CODE VERSION: 2.0    */
+/* ------------------------------- */
+
+
+/* PROJECT SPECIFIC VALUES: START */
+:root{
+      /* Primary Palette */
+      /* Choosen palette: light-green */
+      --primary:#8BC34A;
+      --primary-lighten-5:#F1F8E9;
+      --primary-lighten-4:#DCEDC8;
+      --primary-lighten-3:#C5E1A5;
+      --primary-lighten-2:#AED581;
+      --primary-lighten-1:#9CCC65;
+      --primary-darken-1:#7CB342;
+      --primary-darken-2:#689F38;
+      --primary-darken-3:#558B2F;
+      --primary-darken-4:#33691E;
+      /* Secondary Palette */  
+      /* Choosen palette: blue-grey */
+      --secondary:#607D8B;
+      --secondary-lighten-5:#ECEFF1;
+      --secondary-lighten-4:#CFD8DC;
+      --secondary-lighten-3:#B0BEC5;
+      --secondary-lighten-2:#90A4AE;
+      --secondary-lighten-1:#78909C;
+      --secondary-darken-1:#546E7A;
+      --secondary-darken-2:#455A64;
+      --secondary-darken-3:#37474F;
+      --secondary-darken-4:#263238;
+       /* General Palette */ 
+      --accent:#cddc39; /* lime */
+      --error:#E96767; 
+      --info:#3992D8;
+      --success:#58A25B;
+      --warning:#DB871F;
+  
+      /* Page Background: Try to use a light tone from secondary palette. */ 
+      --pageBackground:#ECEFF1; /* secondary lighten-5 */
+  
+      /* Text on primary, secondary and general palettes */
+      --darkTextColor:#000000;
+      --lightTextColor:#FFFFFF;
+  }
+/* PROJECT SPECIFIC VALUES: END */
+
+/* STANDARD CODE FOR EVERY PLATEAU PROJECT: START */
+.v-application,
+.v-application input,
+.v-application select,
+.v-application textarea { font-family:'Roboto', sans-serif !important; font-size:16px !important; }
+
+  body .v-application .text-h1,
+  body .v-application .text-h2,
+  body .v-application .text-h3,
+  body .v-application .text-h4,
+  body .v-application .text-h5,
+  body .v-application .text-h6,
+  body .v-application .text-display-4,
+  body .v-application .text-display-3,
+  body .v-application .text-display-2,
+  body .v-application .text-display-1,
+  body .v-application .text-headline,
+  body .v-application .text-title,
+  body .v-application .text-subtitle-1,
+  body .v-application .text-subtitle-2,
+  body .v-application .text-body-1,
+  body .v-application .text-body-2,
+  body .v-application .text-caption,
+  body .v-application .text-overline { font-family:'Roboto', sans-serif !important; line-height:normal !important; }
+
+  body .v-application .primary { background-color:var(--primary) !important; border-color:var(--primary) !important; }
+  body .v-application .primary { color:white !important; caret-color:white !important; }
+  body .v-application .primary.lighten-5 { background-color:var(--primary-lighten-5) !important; border-color:var(--primary-lighten-5) !important; }
+  body .v-application .primary.lighten-5 { color:black !important; caret-color:black !important; }
+  body .v-application .primary.lighten-4 { background-color:var(--primary-lighten-4) !important; border-color:var(--primary-lighten-4) !important; }
+  body .v-application .primary.lighten-4 { background-color:var(--primary-lighten-4) !important; border-color:var(--primary-lighten-4) !important; }
+  body .v-application .primary.lighten-3 { background-color:var(--primary-lighten-3) !important; border-color:var(--primary-lighten-3) !important; }
+  body .v-application .primary.lighten-2 { background-color:var(--primary-lighten-2) !important; border-color:var(--primary-lighten-2) !important; }
+  body .v-application .primary.lighten-1 { background-color:var(--primary-lighten-1) !important; border-color:var(--primary-lighten-1) !important; }
+  body .v-application .primary.darken-1 { background-color:var(--primary-darken-1) !important; border-color:var(--primary-darken-1) !important; }
+  body .v-application .primary.darken-2 { background-color:var(--primary-darken-2) !important; border-color:var(--primary-darken-2) !important; }
+  body .v-application .primary.darken-3 { background-color:var(--primary-darken-3) !important; border-color:var(--primary-darken-3) !important; }
+  body .v-application .primary.darken-4 { background-color:var(--primary-darken-4) !important; border-color:var(--primary-darken-4) !important; }
+
+  body .v-application .secondary { background-color:var(--secondary) !important; border-color:var(--secondary) !important; }
+  body .v-application .secondary.lighten-5 { background-color:var(--secondary-lighten-5) !important; border-color:var(--secondary-lighten-5) !important; }
+  body .v-application .secondary.lighten-4 { background-color:var(--secondary-lighten-4) !important; border-color:var(--secondary-lighten-4) !important; }
+  body .v-application .secondary.lighten-3 { background-color:var(--secondary-lighten-3) !important; border-color:var(--secondary-lighten-3) !important; }
+  body .v-application .secondary.lighten-2 { background-color:var(--secondary-lighten-2) !important; border-color:var(--secondary-lighten-2) !important; }
+  body .v-application .secondary.lighten-1 { background-color:var(--secondary-lighten-1) !important; border-color:var(--secondary-lighten-1) !important; }
+  body .v-application .secondary.darken-1 { background-color:var(--secondary-darken-1) !important; border-color:var(--secondary-darken-1) !important; }
+  body .v-application .secondary.darken-2 { background-color:var(--secondary-darken-2) !important; border-color:var(--secondary-darken-2) !important; }
+  body .v-application .secondary.darken-3 { background-color:var(--secondary-darken-3) !important; border-color:var(--secondary-darken-3) !important; }
+  body .v-application .secondary.darken-4 { background-color:var(--secondary-darken-4) !important; border-color:var(--secondary-darken-4) !important; }
+
+  body .v-application .accent { background-color:var(--accent) !important; border-color:var(--accent) !important; }
+  body .v-application .error { background-color:var(--error) !important; border-color:var(--error) !important; }
+  body .v-application .info { background-color:var(--info) !important; border-color:var(--info) !important; }
+  body .v-application .success { background-color:var(--success) !important; border-color:var(--success) !important; }
+  body .v-application .warning { background-color:var(--warning) !important; border-color:var(--warning) !important; }
+
+/* Dark text color */  
+  body .v-application .primary.lighten-5,
+  body .v-application .primary.lighten-4,
+  body .v-application .primary.lighten-3, 
+  body .v-application .primary.lighten-2,
+  body .v-application .primary.lighten-1,
+  body .v-application .secondary.lighten-5,
+  body .v-application .secondary.lighten-4,
+  body .v-application .secondary.lighten-3,
+  body .v-application .secondary.lighten-2,
+  body .v-application .secondary.lighten-1,
+  body .v-application .accent { color:var(--darkTextColor) !important; caret-color:var(--darkTextColor) !important; }
+/* Light text color */
+  body .v-application .primary,
+  body .v-application .primary.darken-1,
+  body .v-application .primary.darken-2,
+  body .v-application .primary.darken-3,
+  body .v-application .primary.darken-4,
+  body .v-application .secondary,
+  body .v-application .secondary.darken-1,
+  body .v-application .secondary.darken-2,
+  body .v-application .secondary.darken-3,
+  body .v-application .secondary.darken-4,
+  body .v-application .error,
+  body .v-application .info,
+  body .v-application .success,
+  body .v-application .warning { color:var(--lightTextColor) !important; caret-color:(--lightTextColor) !important; }
+  
+  body .v-application .secondary--text { color:var(--secondary) !important; caret-color:var(--secondary--text) !important; }
+  body .v-application .secondary--text.darken-1 { color:var(--secondary-darken-1) !important; caret-color:var(--secondary--text-darken-1) !important; }
+  body .v-application .secondary--text.darken-2 { color:var(--secondary-darken-2) !important; caret-color:var(--secondary--text-darken-2) !important; }
+  body .v-application .secondary--text.darken-3 { color:var(--secondary-darken-3) !important; caret-color:var(--secondary--text-darken-3) !important; }
+  body .v-application .secondary--text.darken-4 { color:var(--secondary-darken-4) !important; caret-color:var(--secondary--text-darken-4) !important; }
+  body .v-application .secondary--text.lighten-1 { color:var(--secondary-lighten-1) !important; caret-color:var(--secondary--text-lighten-1) !important; }
+  body .v-application .secondary--text.lighten-2 { color:var(--secondary-lighten-2) !important; caret-color:var(--secondary--text-lighten-2) !important; }
+  body .v-application .secondary--text.lighten-3 { color:var(--secondary-lighten-3) !important; caret-color:var(--secondary--text-lighten-3) !important; }
+  body .v-application .secondary--text.lighten-4 { color:var(--secondary-lighten-4) !important; caret-color:var(--secondary--text-lighten-4) !important; }
+  body .v-application .secondary--text.lighten-5 { color:var(--secondary-lighten-5) !important; caret-color:var(--secondary--text-lighten-5) !important; }
+  
+  body .v-application .primary--text { color:var(--primary) !important; caret-color:var(--primary--text) !important; }
+  body .v-application .primary--text.darken-1 { color:var(--primary-darken-1) !important; caret-color:var(--primary--text-darken-1) !important; }
+  body .v-application .primary--text.darken-2 { color:var(--primary-darken-2) !important; caret-color:var(--primary--text-darken-2) !important; }
+  body .v-application .primary--text.darken-3 { color:var(--primary-darken-3) !important; caret-color:var(--primary--text-darken-3) !important; }
+  body .v-application .primary--text.darken-4 { color:var(--primary-darken-4) !important; caret-color:var(--primary--text-darken-4) !important; }
+  body .v-application .primary--text.lighten-1 { color:var(--primary-lighten-1) !important; caret-color:var(--primary--text-lighten-1) !important; }
+  body .v-application .primary--text.lighten-2 { color:var(--primary-lighten-2) !important; caret-color:var(--primary--text-lighten-2) !important; }
+  body .v-application .primary--text.lighten-3 { color:var(--primary-lighten-3) !important; caret-color:var(--primary--text-lighten-3) !important; }
+  body .v-application .primary--text.lighten-4 { color:var(--primary-lighten-4) !important; caret-color:var(--primary--text-lighten-4) !important; }
+  body .v-application .primary--text.lighten-5 { color:var(--primary-lighten-5) !important; caret-color:var(--primary--text-lighten-5) !important; }
+  
+  body .v-application .accent--text { color:var(--accent) !important; caret-color:var(--accent--text) !important; }
+  body .v-application .info--text { color:var(--info) !important; caret-color:var(--info--text) !important; }
+  body .v-application .success--text { color:var(--success) !important; caret-color:var(--success--text) !important; }
+  body .v-application .warning--text { color:var(--warning) !important; caret-color:var(--warning--text) !important; }
+  body .v-application .error--text { color:var(--error) !important; caret-color:var(--error--text) !important; }
+
+  .shellContainerTarget { background:var(--pageBackground) !important; }
+
+/* STANDARD CODE FOR EVERY PLATEAU PROJECT: END */
+
+
+/* Project specific code */
+.theme--light.v-application { background:var(--pageBackground) !important; }
+.v-btn { text-transform:none !important; }
+.v-navigation-drawer .v-list-item__title { color: #FFFFFF !important; font-weight: medium; font-size: 16px;} 
+.v-navigation-drawer .v-icon { font-size: 28px; margin: 0 0 0 12px; color: #FFFFFF !important;}
+
+/* Class Name: stickytable */
+/* Components: v-data-table */
+/* Aciklama: Tablonun en sağındaki Actions kolonunun yatay scroll olduğunda sticky kalması */ 
+.stickytable table > tbody > tr > td.fixed,
+.stickytable table > thead > tr > th.fixed {
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  right: 0;
+  z-index: 1;
+  background: white;
+  border-left: 1px solid rgb(152 29 29 / 19%);
+  border-right: 1px solid rgb(152 29 29 / 19%);
+}
+
+/* PLT-11283 Güncellemesi */
+/* Aciklama: TextBox mouse imleç hatası */
+body .v-application .v-tabs
+{ caret-color: rgb(0, 0, 0) !important; }
+
+/* Class Name: popup-scroll */
+/* Pop-up içi scroll edilememesi çözümü */
+.popup-scroll {
+  height: 440px;
+  overflow: scroll!important;
+}
