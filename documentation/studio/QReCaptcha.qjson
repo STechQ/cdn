@@ -1,0 +1,730 @@
+let pjson = {
+	"pJson": [
+		{
+			"T": "Messaging",
+			"P": {
+				"ID": {
+					"H": "MessagingComp",
+					"T": "prop"
+				},
+				"triggerOnRestored": {
+					"H": "false",
+					"T": "prop"
+				}
+			},
+			"E": {},
+			"C": {},
+			"_Editor": {
+				"eID": "EdtrComp_21"
+			},
+			"O": {
+				"cType": "child"
+			}
+		},
+		{
+			"T": "VContainer",
+			"P": {
+				"ID": {
+					"H": "VContainerComp",
+					"T": "prop"
+				},
+				"class": {
+					"H": "'container container--fluid'",
+					"T": "class"
+				},
+				"visible": {
+					"H": "true",
+					"T": "prop"
+				},
+				"eager": {
+					"H": "true",
+					"T": "prop"
+				}
+			},
+			"E": {},
+			"C": {
+				"default": {
+					"c": [
+						{
+							"T": "VRow",
+							"P": {
+								"ID": {
+									"H": "VRowComp",
+									"T": "prop"
+								}
+							},
+							"E": {},
+							"C": {
+								"default": {
+									"c": [
+										{
+											"T": "VCol",
+											"C": {
+												"default": {
+													"c": [
+														{
+															"T": "QReCaptcha",
+															"P": {
+																"ID": {
+																	"H": "EdtrComp_5",
+																	"T": "prop"
+																},
+																"siteKey": {
+																	"H": "'6LfZz6kiAAAAAIK0Y9eD2WjVTOyMhxYwqS34mXxt'",
+																	"T": "prop"
+																},
+																"size": {
+																	"H": "'normal'",
+																	"T": "prop"
+																}
+															},
+															"E": {
+																"onVerify": {
+																	"H": "const captcha = JSON.stringify({ token: token })\r\nconst secretkey = '6LfZz6kiAAAAAHLgDAQa1BRUpY9LDr49u4Vj_lxr'\r\nconst reqHeaders = {\r\n    \"Accept\": \"application/json, text/plain, */*\",\r\n    \"Content-Type\": \"application/json\"\r\n}\r\n\r\nconst req: IRequest = {\r\nurl: `https://www.google.com/recaptcha/api/siteverify?secret=${secretkey}&response=${token}`, \r\ndata: captcha, \r\nheaders: reqHeaders,\r\nblockRender: false, \r\nhttp: \"post\",\r\nonFail: null, \r\nonSuccess: \"onSuccessVerify\",\r\nresponseField: \"verifyResponse\"\r\n};\r\n\r\nquick.Request.async(req);\r\n\r\n",
+																	"P": "token:string",
+																	"HL": "TS"
+																},
+																"onSuccessVerify": {
+																	"H": "let status = response.verifyResponse.success\r\nquick.EM.trace(status)\r\nstatus == true ? components.EdtrComp_43.disabled = false : components.EdtrComp_43.disabled = true",
+																	"C": true,
+																	"HL": "TS"
+																}
+															},
+															"C": {},
+															"_Editor": {
+																"eID": "EdtrComp_5"
+															},
+															"O": {
+																"cType": "slot"
+															}
+														}
+													],
+													"cType": "slot"
+												}
+											},
+											"E": {},
+											"P": {
+												"ID": {
+													"H": "VColComp",
+													"T": "prop"
+												}
+											},
+											"_Editor": {
+												"eID": "EdtrComp_27"
+											},
+											"O": {
+												"cType": "slot",
+												"layout": {
+													"dOpt": {
+														"xs": [
+															"d:d-flex",
+															"fd:flex-column"
+														]
+													},
+													"class": "d-flex flex-column"
+												}
+											}
+										}
+									],
+									"cType": "slot"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_24"
+							},
+							"O": {
+								"cType": "slot"
+							}
+						}
+					],
+					"cType": "slot"
+				}
+			},
+			"_Editor": {
+				"eID": "EdtrComp_22"
+			},
+			"O": {
+				"cType": "slot"
+			}
+		},
+		{
+			"T": "VBtn",
+			"P": {
+				"ID": {
+					"H": "EdtrComp_3",
+					"T": "prop"
+				},
+				"color": {
+					"H": "'primary'",
+					"T": "prop"
+				},
+				"depressed": {
+					"H": "true",
+					"T": "prop"
+				},
+				"elevation": {
+					"H": "0",
+					"T": "prop"
+				},
+				"height": {
+					"H": "'40px'",
+					"T": "prop"
+				},
+				"visible": {
+					"H": "true",
+					"T": "prop"
+				}
+			},
+			"E": {
+				"click": {
+					"H": "quick.Quick.setLanguage(\"en-US\")",
+					"P": "mouseEvent:unknown | undefined",
+					"HL": "TS"
+				}
+			},
+			"C": {
+				"default": {
+					"c": [
+						{
+							"T": "QLabel",
+							"C": {},
+							"E": {},
+							"P": {
+								"ID": {
+									"H": "EdtrComp_7",
+									"T": "prop"
+								},
+								"text": {
+									"H": "'İngilizce Recaptcha'",
+									"T": "prop"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_7"
+							},
+							"O": {
+								"cType": "child"
+							}
+						}
+					],
+					"cType": "slot"
+				}
+			},
+			"_Editor": {
+				"eID": "EdtrComp_3"
+			},
+			"O": {
+				"cType": "slot"
+			}
+		},
+		{
+			"T": "VBtn",
+			"P": {
+				"ID": {
+					"H": "EdtrComp_10",
+					"T": "prop"
+				},
+				"color": {
+					"H": "'primary'",
+					"T": "prop"
+				},
+				"depressed": {
+					"H": "true",
+					"T": "prop"
+				},
+				"elevation": {
+					"H": "0",
+					"T": "prop"
+				},
+				"height": {
+					"H": "'40px'",
+					"T": "prop"
+				},
+				"visible": {
+					"H": "true",
+					"T": "prop"
+				}
+			},
+			"E": {
+				"click": {
+					"H": "quick.Quick.setLanguage(\"tr-TR\")",
+					"P": "mouseEvent:unknown | undefined",
+					"HL": "TS"
+				}
+			},
+			"C": {
+				"default": {
+					"c": [
+						{
+							"T": "QLabel",
+							"C": {},
+							"E": {},
+							"P": {
+								"ID": {
+									"H": "EdtrComp_11",
+									"T": "prop"
+								},
+								"text": {
+									"H": "'Türkçe Recaptcha'",
+									"T": "prop"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_11"
+							},
+							"O": {
+								"cType": "child"
+							}
+						}
+					],
+					"cType": "slot"
+				}
+			},
+			"_Editor": {
+				"eID": "EdtrComp_10"
+			},
+			"O": {
+				"cType": "slot"
+			}
+		},
+		{
+			"T": "VBtn",
+			"P": {
+				"ID": {
+					"H": "EdtrComp_43",
+					"T": "prop"
+				},
+				"color": {
+					"H": "'primary'",
+					"T": "prop"
+				},
+				"depressed": {
+					"H": "true",
+					"T": "prop"
+				},
+				"elevation": {
+					"H": "0",
+					"T": "prop"
+				},
+				"height": {
+					"H": "'40px'",
+					"T": "prop"
+				},
+				"visible": {
+					"H": "true",
+					"T": "prop"
+				},
+				"disabled": {
+					"H": "true",
+					"T": "prop"
+				}
+			},
+			"E": {},
+			"C": {
+				"default": {
+					"c": [
+						{
+							"T": "QLabel",
+							"C": {},
+							"E": {},
+							"P": {
+								"ID": {
+									"H": "EdtrComp_44",
+									"T": "prop"
+								},
+								"text": {
+									"H": "'Disable/Enable'",
+									"T": "prop"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_44"
+							},
+							"O": {
+								"cType": "child"
+							}
+						}
+					],
+					"cType": "slot"
+				}
+			},
+			"_Editor": {
+				"eID": "EdtrComp_43"
+			},
+			"O": {
+				"cType": "slot"
+			}
+		}
+	],
+	"cJson": [
+		{
+			"T": "Messaging",
+			"P": {
+				"ID": {
+					"H": "MessagingComp",
+					"T": "prop"
+				},
+				"triggerOnRestored": {
+					"H": "╬false╩╩",
+					"T": "prop"
+				}
+			},
+			"E": {},
+			"C": {},
+			"_Editor": {
+				"eID": "EdtrComp_21"
+			},
+			"O": {
+				"cType": "child",
+				"compDomClasses": "newDropBorder"
+			}
+		},
+		{
+			"T": "VContainer",
+			"P": {
+				"ID": {
+					"H": "VContainerComp",
+					"T": "prop"
+				},
+				"class": {
+					"H": "╬'container container--fluid'╩╩",
+					"T": "class"
+				},
+				"visible": {
+					"H": "╬true╩╩",
+					"T": "prop"
+				},
+				"eager": {
+					"H": "╬true╩╩",
+					"T": "prop"
+				}
+			},
+			"E": {},
+			"C": {
+				"default": {
+					"c": [
+						{
+							"T": "VRow",
+							"P": {
+								"ID": {
+									"H": "VRowComp",
+									"T": "prop"
+								}
+							},
+							"E": {},
+							"C": {
+								"default": {
+									"c": [
+										{
+											"T": "VCol",
+											"C": {
+												"default": {
+													"c": [
+														{
+															"T": "QReCaptcha",
+															"P": {
+																"ID": {
+																	"H": "EdtrComp_5",
+																	"T": "prop"
+																},
+																"siteKey": {
+																	"H": "╬'6LfZz6kiAAAAAIK0Y9eD2WjVTOyMhxYwqS34mXxt'╩╩",
+																	"T": "prop"
+																},
+																"size": {
+																	"H": "╬'normal'╩╩",
+																	"T": "prop"
+																}
+															},
+															"E": {
+																"onVerify": {
+																	"H": "Object.defineProperty(exports, \"__esModule\", { value: true });\r\nvar captcha = JSON.stringify({ token: token });\r\nvar secretkey = '6LfZz6kiAAAAAHLgDAQa1BRUpY9LDr49u4Vj_lxr';\r\nvar reqHeaders = {\r\n    \"Accept\": \"application/json, text/plain, */*\",\r\n    \"Content-Type\": \"application/json\"\r\n};\r\nvar req = {\r\n    url: \"https://www.google.com/recaptcha/api/siteverify?secret=\" + secretkey + \"&response=\" + token,\r\n    data: captcha,\r\n    headers: reqHeaders,\r\n    blockRender: false,\r\n    http: \"post\",\r\n    onFail: null,\r\n    onSuccess: \"onSuccessVerify\",\r\n    responseField: \"verifyResponse\"\r\n};\r\nquick.Request.async(req);\r\n",
+																	"P": "token:string",
+																	"HL": "JS"
+																},
+																"onSuccessVerify": {
+																	"H": "Object.defineProperty(exports, \"__esModule\", { value: true });\r\nvar status = response.verifyResponse.success;\r\nquick.EM.trace(status);\r\nstatus == true ? components.EdtrComp_43.disabled = false : components.EdtrComp_43.disabled = true;\r\n",
+																	"C": true,
+																	"HL": "JS"
+																}
+															},
+															"C": {},
+															"_Editor": {
+																"eID": "EdtrComp_5"
+															},
+															"O": {
+																"cType": "slot",
+																"compDomClasses": "form newDropBorder"
+															}
+														}
+													],
+													"cType": "slot"
+												}
+											},
+											"E": {},
+											"P": {
+												"ID": {
+													"H": "VColComp",
+													"T": "prop"
+												}
+											},
+											"_Editor": {
+												"eID": "EdtrComp_27"
+											},
+											"O": {
+												"cType": "slot",
+												"layout": {
+													"dOpt": {
+														"xs": [
+															"d:d-flex",
+															"fd:flex-column"
+														]
+													},
+													"class": "d-flex flex-column"
+												},
+												"compDomClasses": "col d-flex flex-column newDropBorder"
+											}
+										}
+									],
+									"cType": "slot"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_24"
+							},
+							"O": {
+								"cType": "slot",
+								"compDomClasses": "row newDropBorder"
+							}
+						}
+					],
+					"cType": "slot"
+				}
+			},
+			"_Editor": {
+				"eID": "EdtrComp_22"
+			},
+			"O": {
+				"cType": "slot",
+				"compDomClasses": "container container--fluid newDropBorder"
+			}
+		},
+		{
+			"T": "VBtn",
+			"P": {
+				"ID": {
+					"H": "EdtrComp_3",
+					"T": "prop"
+				},
+				"color": {
+					"H": "╬'primary'╩╩",
+					"T": "prop"
+				},
+				"depressed": {
+					"H": "╬true╩╩",
+					"T": "prop"
+				},
+				"elevation": {
+					"H": "╬0╩╩",
+					"T": "prop"
+				},
+				"height": {
+					"H": "╬'40px'╩╩",
+					"T": "prop"
+				},
+				"visible": {
+					"H": "╬true╩╩",
+					"T": "prop"
+				}
+			},
+			"E": {
+				"click": {
+					"H": "Object.defineProperty(exports, \"__esModule\", { value: true });\r\nquick.Quick.setLanguage(\"en-US\");\r\n",
+					"P": "mouseEvent:unknown | undefined",
+					"HL": "JS"
+				}
+			},
+			"C": {
+				"default": {
+					"c": [
+						{
+							"T": "QLabel",
+							"C": {},
+							"E": {},
+							"P": {
+								"ID": {
+									"H": "EdtrComp_7",
+									"T": "prop"
+								},
+								"text": {
+									"H": "╬'İngilizce Recaptcha'╩╩",
+									"T": "prop"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_7"
+							},
+							"O": {
+								"cType": "child",
+								"compDomClasses": "q-label newDropBorder"
+							}
+						}
+					],
+					"cType": "slot"
+				}
+			},
+			"_Editor": {
+				"eID": "EdtrComp_3"
+			},
+			"O": {
+				"cType": "slot",
+				"compDomClasses": "v-btn v-btn--depressed theme--light elevation-0 v-size--default primary newDropBorder"
+			}
+		},
+		{
+			"T": "VBtn",
+			"P": {
+				"ID": {
+					"H": "EdtrComp_10",
+					"T": "prop"
+				},
+				"color": {
+					"H": "╬'primary'╩╩",
+					"T": "prop"
+				},
+				"depressed": {
+					"H": "╬true╩╩",
+					"T": "prop"
+				},
+				"elevation": {
+					"H": "╬0╩╩",
+					"T": "prop"
+				},
+				"height": {
+					"H": "╬'40px'╩╩",
+					"T": "prop"
+				},
+				"visible": {
+					"H": "╬true╩╩",
+					"T": "prop"
+				}
+			},
+			"E": {
+				"click": {
+					"H": "Object.defineProperty(exports, \"__esModule\", { value: true });\r\nquick.Quick.setLanguage(\"tr-TR\");\r\n",
+					"P": "mouseEvent:unknown | undefined",
+					"HL": "JS"
+				}
+			},
+			"C": {
+				"default": {
+					"c": [
+						{
+							"T": "QLabel",
+							"C": {},
+							"E": {},
+							"P": {
+								"ID": {
+									"H": "EdtrComp_11",
+									"T": "prop"
+								},
+								"text": {
+									"H": "╬'Türkçe Recaptcha'╩╩",
+									"T": "prop"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_11"
+							},
+							"O": {
+								"cType": "child",
+								"compDomClasses": "q-label newDropBorder"
+							}
+						}
+					],
+					"cType": "slot"
+				}
+			},
+			"_Editor": {
+				"eID": "EdtrComp_10"
+			},
+			"O": {
+				"cType": "slot",
+				"compDomClasses": "v-btn v-btn--depressed theme--light elevation-0 v-size--default primary newDropBorder"
+			}
+		},
+		{
+			"T": "VBtn",
+			"P": {
+				"ID": {
+					"H": "EdtrComp_43",
+					"T": "prop"
+				},
+				"color": {
+					"H": "╬'primary'╩╩",
+					"T": "prop"
+				},
+				"depressed": {
+					"H": "╬true╩╩",
+					"T": "prop"
+				},
+				"elevation": {
+					"H": "╬0╩╩",
+					"T": "prop"
+				},
+				"height": {
+					"H": "╬'40px'╩╩",
+					"T": "prop"
+				},
+				"visible": {
+					"H": "╬true╩╩",
+					"T": "prop"
+				},
+				"disabled": {
+					"H": "╬true╩╩",
+					"T": "prop"
+				}
+			},
+			"E": {},
+			"C": {
+				"default": {
+					"c": [
+						{
+							"T": "QLabel",
+							"C": {},
+							"E": {},
+							"P": {
+								"ID": {
+									"H": "EdtrComp_44",
+									"T": "prop"
+								},
+								"text": {
+									"H": "╬'Disable/Enable'╩╩",
+									"T": "prop"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_44"
+							},
+							"O": {
+								"cType": "child",
+								"compDomClasses": "q-label newDropBorder"
+							}
+						}
+					],
+					"cType": "slot"
+				}
+			},
+			"_Editor": {
+				"eID": "EdtrComp_43"
+			},
+			"O": {
+				"cType": "slot",
+				"compDomClasses": "v-btn v-btn--depressed v-btn--disabled theme--light elevation-0 v-size--default newDropBorder"
+			}
+		}
+	],
+	"lrids": {},
+	"clrids": {}
+};
+export default pjson
