@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'inputset';
+  src:
+    url('fonts/inputset.ttf?5h59ye') format('truetype'),
+    url('fonts/inputset.woff?5h59ye') format('woff'),
+    url('fonts/inputset.svg?5h59ye#inputset') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; 
+}
+
+i.icn {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'inputset' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icn-description:before {
+  content: "\e933";
+}
+.icn-drophere:before {
+  content: "\e932";
+}
+.icn-addcolumn:before {
+  content: "\e925";
+}
+.icn-addrow:before {
+  content: "\e926";
+}
+.icn-removerow:before {
+  content: "\e927";
+}
+.icn-removecolumn:before {
+  content: "\e928";
+}
+.icn-merge:before {
+  content: "\e929";
+}
+.icn-split:before {
+  content: "\e92a";
+}
+.icn-alignright:before {
+  content: "\e92b";
+}
+.icn-aligncenter:before {
+  content: "\e92c";
+}
+.icn-alignleft:before {
+  content: "\e92d";
+}
+.icn-aligntop:before {
+  content: "\e92e";
+}
+.icn-alignmiddle:before {
+  content: "\e92f";
+}
+.icn-alignbottom:before {
+  content: "\e930";
+}
+.icn-editmode:before {
+  content: "\e931";
+}
+.icn-close:before {
+  content: "\e924";
+}
+.icn-information:before {
+  content: "\e923";
+}
+.icn-filter:before {
+  content: "\e91e";
+}
+.icn-up:before {
+  content: "\e91f";
+}
+.icn-down:before {
+  content: "\e920";
+}
+.icn-duplicate:before {
+  content: "\e921";
+}
+.icn-trash:before {
+  content: "\e922";
+}
+.icn-settings:before {
+  content: "\e915";
+}
+.icn-history:before {
+  content: "\e916";
+}
+.icn-visibility:before {
+  content: "\e917";
+}
+.icn-undo:before {
+  content: "\e918";
+}
+.icn-redo:before {
+  content: "\e919";
+}
+.icn-code:before {
+  content: "\e91a";
+}
+.icn-cards:before {
+  content: "\e91b";
+}
+.icn-list:before {
+  content: "\e91c";
+}
+.icn-toggle:before {
+  content: "\e91d";
+}
+.icn-input:before {
+  content: "\e914";
+}
+.icn-radio:before {
+  content: "\e900";
+}
+.icn-checkbox:before {
+  content: "\e901";
+}
+.icn-carousel:before {
+  content: "\e902";
+}
+.icn-video:before {
+  content: "\e903";
+}
+.icn-carouselwithslider:before {
+  content: "\e904";
+}
+.icn-button:before {
+  content: "\e905";
+}
+.icn-slider:before {
+  content: "\e906";
+}
+.icn-search:before {
+  content: "\e907";
+}
+.icn-rangeselector:before {
+  content: "\e908";
+}
+.icn-switch:before {
+  content: "\e909";
+}
+.icn-rate:before {
+  content: "\e90a";
+}
+.icn-textarea:before {
+  content: "\e90b";
+}
+.icn-scroll:before {
+  content: "\e90c";
+}
+.icn-password:before {
+  content: "\e90d";
+}
+.icn-dropdown:before {
+  content: "\e90e";
+}
+.icn-switch1:before {
+  content: "\e90f";
+}
+.icn-container:before {
+  content: "\e910";
+}
+.icn-blocks:before {
+  content: "\e911";
+}
+.icn-tooltipslider:before {
+  content: "\e912";
+}
+.icn-tabs:before {
+  content: "\e913";
+}
+
+
+img.icon {
+  width: 24px;
+  height: 24px;
+}
+.icon-align-vertical-bottom {
+  background-image: url("icons/align-vertical-bottom.svg");
+}
+.icon-align-vertical-top {
+  background-image: url("icons/align-vertical-top.svg");
+}
+.icon-align-vertical-center {
+  background-image: url("icons/align-vertical-center.svg");
+}
+.icon-baseline-top {
+  background-image: url("icons/baseline-top.svg");
+}
+.icon-stretch-vertical {
+  background-image: url("icons/stretch-vertical.svg");
+}
+.icon-horizontal-space-around {
+  background-image: url("icons/horizontal-space-around.svg");
+}
+.icon-horizontal-space-between {
+  background-image: url("icons/horizontal-space-between.svg");
+}
+.icon-justify-horizontal-center {
+  background-image: url("icons/justify-horizontal-center.svg");
+}
+.icon-justify-horizontal-end {
+  background-image: url("icons/justify-horizontal-end.svg");
+}
+.icon-justify-horizontal-start {
+  background-image: url("icons/justify-horizontal-start.svg");
+}
+
+.nemo_quickBtns .mdi.mdi-arrow-all {
+  font-size: 10px;
+}
