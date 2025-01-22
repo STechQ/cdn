@@ -13,7 +13,7 @@ excludeInSearch: true
 
 ### **1.2.Set service header consumer code**
 
-- You can simulate it in Studio by using pipeline. For more detailed information about Nar pipeline usage in Studio, click <a href="https://docs.onplateau.com/Nar/studio-integration-of-microUI-projects#using-nar-pipeline-in-studio" target="_blank">See More</a>.
+- You can simulate it in Studio by using pipeline. For more detailed information about Nar pipeline usage in Studio, click <a href="https://jira.isbank/confluence/display/KEGP/Studio+Integration+Of+microUI+Projects" target="_blank">See More</a>.
 
 <img src="https://stechq.github.io/cdn/documentation/nar/nar_Container_Services_File_getHeader.png" width="640" />
 <br/>
