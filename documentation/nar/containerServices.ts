@@ -1,5 +1,39 @@
 //#region JS Section
+var myQueryParams = "";
 var containerServices = {
+    activeRendererCb: () => {
+
+    },
+    authenticatedCb: () => {
+
+    },
+    print: (data) => {
+
+    },
+    scan: (data) => {
+
+    },
+    ocr: (data) => {
+
+    },
+    biometric: (data) => {
+
+    },
+    biometricTechSign: (reqData, pdfData) => {
+
+    },
+    openWindow: (sWindowTitle, sUrl, options) => {
+
+    },
+    resourceCb: (resource) => {
+
+    },
+    customerContextCb: () => {
+
+    },
+    callMessageBox: (messageType, messages, title) => {
+
+    },
     userContextCb: () => {
 
         return {
@@ -2623,7 +2657,13 @@ var containerServices = {
         }
     },
     extensions: {
-        sampleFunc: () => { console.log("sampleFunc executed") }
+        sampleFunc: () => { console.log("sampleFunc executed") },
+        setQueryParams: (data) => {
+            myQueryParams = data;
+        },
+        getQueryParams: () => {
+            return myQueryParams;
+        },
     }
 }
 
