@@ -2664,6 +2664,21 @@ var containerServices = {
         getQueryParams: () => {
             return myQueryParams;
         },
+        getHeaderConsumerCode: () => {
+
+            return '{ "branchContextV1": { "lang": "tr", "consumerCode": "TANE.ID", "channelCode":"branch", "ipAddress": "10.198.186.109", "workstationName": "UATVM042_4299", "organizationUnitCode":4299 }}';
+        },
+        getHeader: (moduleName, key) => {
+            if (key == "isbClient") {
+                return '{"branch-v1" : {"workstationName": "UATVM042_4299", "organizationUnitCode": 4299, "tellerId":78, "screenName":"NarCmmnScr"}}';
+            } else if (key == "customer") {
+                return '{"customer": {"customerNumber":161210860}}';
+            }
+
+        },
+        getCorrelationId: () => {
+            return 'UATVM042_4299-363b-4a41-8491-1c8b321c97e3';
+        },
     }
 }
 
