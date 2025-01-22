@@ -1,39 +1,17 @@
 //#region JS Section
 var myQueryParams = "";
 var containerServices = {
-    activeRendererCb: () => {
-
-    },
-    authenticatedCb: () => {
-
-    },
-    print: (data) => {
-
-    },
-    scan: (data) => {
-
-    },
-    ocr: (data) => {
-
-    },
-    biometric: (data) => {
-
-    },
-    biometricTechSign: (reqData, pdfData) => {
-
-    },
-    openWindow: (sWindowTitle, sUrl, options) => {
-
-    },
-    resourceCb: (resource) => {
-
-    },
-    customerContextCb: () => {
-
-    },
-    callMessageBox: (messageType, messages, title) => {
-
-    },
+    activeRendererCb: () => { },
+    authenticatedCb: () => { },
+    print: (data) => { },
+    scan: (data) => { },
+    ocr: (data) => { },
+    biometric: (data) => { },
+    biometricTechSign: (reqData, pdfData) => { },
+    openWindow: (sWindowTitle, sUrl, options) => { },
+    resourceCb: (resource) => { },
+    customerContextCb: () => { },
+    callMessageBox: (messageType, messages, title) => { },
     userContextCb: () => {
 
         return {
@@ -2681,7 +2659,6 @@ var containerServices = {
         },
     }
 }
-
 
 if (typeof exports === 'object' && typeof module === 'object') {
     module.exports = containerServices;
