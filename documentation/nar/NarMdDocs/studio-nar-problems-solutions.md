@@ -317,7 +317,7 @@ function createTimeString() {
 For detailed information, you should reach out to the **Dijital Şube Platformu team** at **<DijitalSubePlatformu@softtech.com.tr>**
 :::
 
-### **Dijital Sube Platform team document addresses**
+### **2.1. Dijital Sube Platform team document addresses**
 
 &nbsp;<a href="https://jira.isbank/confluence/pages/viewpage.action?pageId=248876546" target="_blank">**Nar - Plateau UI and Service Definitions Methods Analysis Document.**</a>
 
@@ -328,7 +328,7 @@ For detailed information, you should reach out to the **Dijital Şube Platformu 
 &nbsp;<a href="https://jira.isbank/confluence/display/KEGP/Nar+-+Quick+Header" target="_blank">**Nar - Plateau Header**</a>
 
 
-###  **2.1.To open a new quick screen in NAR in a new TAB from the Quick screen:**
+###  **2.2. To open a new quick screen in NAR in a new TAB from the Quick screen:**
 
 ```ts
 const urlString = "https://xxx";
@@ -339,7 +339,7 @@ if (quick.containerServices.extensions?.customFunctions?.navigationManager?.go) 
 }
 ```
 
-### **2.2.To open the Quick screen from the PEGA screen:**
+### **2.3. To open the Quick screen from the PEGA screen:**
 
 - **On the NAR side:**
     - If there is a parameter, the parameter information is set:
