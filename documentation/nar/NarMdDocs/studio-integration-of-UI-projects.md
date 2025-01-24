@@ -7,8 +7,8 @@ excludeInSearch: true
 
 **If a new project is to be carried out within NAR**, and if **you do not have an existing microUI project** and your application will only have UI pages, **you can create a UI project**. 
 
-## **1.Create and Install UI Project**
-For more detailed information about **Create and Install UI Project**, click <a href="https://docs.onplateau.com/Export/Uncompiled-Export/create-ui" target="_blank">See More</a>.
+## **1.Create UI Project**
+For more detailed information about **Create UI Project**, click <a href="https://docs.onplateau.com/Export/Uncompiled-Export/create-ui" target="_blank">See More</a>.
 
 ## **2.Installation UI Project On Bank Systems**
 
