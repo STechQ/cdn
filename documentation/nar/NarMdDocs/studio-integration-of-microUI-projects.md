@@ -124,6 +124,14 @@ For more detailed information about pipeline, click <a href="https://docs.onplat
 
 <br/>
 
+### **2.6.Using NAR Settings File in Studio**
+
+- In Studio, add **Settings File** under **"UI Settings"**.
+- Open the <a href="https://stechq.github.io/cdn/documentation/nar/settings.yaml" target="_blank">settings.yaml</a> file with Notepad++ and add its content to the **Settings File**.
+
+    <img src="https://stechq.github.io/cdn/documentation/nar/nar_Settings_File.png" width="640" />
+
+
 ## **3.Uncompiled Export**
 
 - When you are in the **ui** folder of your application, you can perform <a href="https://docs.onplateau.com/Export/Uncompiled-Export/using-uncompiledExport" target="_blank">Uncompiled Export</a>  by running the command **symphony-cli studio-sync**.

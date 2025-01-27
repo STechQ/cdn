@@ -138,6 +138,13 @@ For more detailed information about pipeline, click <a href="https://docs.onplat
 
 <br/>
 
+### **3.6.Using NAR Settings File in Studio**
+
+- In Studio, add **Settings File** under **"UI Settings"**.
+- Open the <a href="https://stechq.github.io/cdn/documentation/nar/settings.yaml" target="_blank">settings.yaml</a> file with Notepad++ and add its content to the **Settings File**.
+
+    <img src="https://stechq.github.io/cdn/documentation/nar/nar_Settings_File.png" width="640" />
+
 
 ## **4.Uncompiled Export**
 
