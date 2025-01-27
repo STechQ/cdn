@@ -20,8 +20,14 @@ excludeInSearch: true
 
 - For more detailed information about **header screenName and consumerCode**, click <a href="https://jira.isbank/confluence/display/KEGP/Nar+-+Quick+Header" target="_blank">**Nar - Plateau Header**</a>.
 
+### **1.3.Add authorization and ltpatoken to service header**
 
-### **1.3.Retrieve the user information logged into NAR**
+- If you are in Studio, you can simulate adding authorization and ltpatoken to service header by using **Container Services File** and **Settings File**. 
+
+<img src="https://stechq.github.io/cdn/documentation/nar/nar_addServiceHeader_authorization_Ltpatoken.png" width="640" />
+<br/>
+
+### **1.4.Retrieve the user information logged into NAR**
 
 To **retrieve the user information logged into NAR** on the UI page, the following command is used. You can get this response when you open the screen within NAR because the NAR shell provides this information. Therefore, you cannot get this information while testing in Studio. If you are in Studio, you can simulate it by using **Container Services File**.
 
@@ -32,7 +38,7 @@ let userContext: any = quick.containerServices?.getUserContext?.();
 <img src="https://stechq.github.io/cdn/documentation/nar/nar_Container_Services_File_getUserContext.png" width="640" />
 <br/>
 
-### **1.4.Using dchost.print and dchost.scan methods on the UI page**
+### **1.5.Using dchost.print and dchost.scan methods on the UI page**
 
 - The following commands are used within the UI page. 
 
