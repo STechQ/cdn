@@ -2647,10 +2647,22 @@ var containerServices = {
             return '{ "branchContextV1": { "lang": "tr", "consumerCode": "TANE.ID", "channelCode":"branch", "ipAddress": "10.198.186.109", "workstationName": "UATVM042_4299", "organizationUnitCode":4299 }}';
         },
         getHeader: (moduleName, key) => {
-            if (key == "isbClient") {
+            if (key == "token") {
+                return 'tbHrGrtG3JNWWFNhUNlAtycADdvVD6lia2lvwLk49XqD6406eyhEYq2YeJ8h2EczmbhxTvI+fz4mK0ExBVSMEs5e2KK2L94gkHtPlHn1UgjoqwtSwnrTsIaBEvIWcaGFTFEIcAPPeZtVBnlhTt1eUhTnC559xbr2rElwRzz/zGZrKrilhE9fukNz2dZPUcnDBfVzjzEYvQy4BncTQbn2c7JpXxLuz66iWBRCIhTL4t4evdrknEo/v1u1/5aWQgUzjCnhqPQ5nZqMmVRXxZlfhqEQKa4F+QEFvmgzyX9knHHexWaAk3ZccJUDMVkB8r1NLm1FJC/Tv+BI/03neRigeIflu+3eUDtA4ETPr3iAUjr57ibEmDkOtm6vSLVkz0sP';
+
+            } else if (key == "consumer") {
+                return '{ "branchContextV1": { "lang": "tr", "consumerCode": "TANE.ID", "channelCode":"branch", "ipAddress": "10.198.186.109", "workstationName": "UATVM042_4299", "organizationUnitCode":4299 }}';
+            }
+            else if (key == "isbClient") {
                 return '{"branch-v1" : {"workstationName": "UATVM042_4299", "organizationUnitCode": 4299, "tellerId":78, "screenName":"NarCmmnScr"}}';
             } else if (key == "customer") {
                 return '{"customer": {"customerNumber":161210860}}';
+            } else if (key == "authorization") {
+                return "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJVRGpuZE8tU3JxVERyWUZQdzlyVjZUelN6bXpqVTh3b0NqZ1JCeERIdXYwIn0.eyJleHAiOjE3Mzc5OTI3NzUsImlhdCI6MTczNzk4OTE3NSwianRpIjoiMTJjZDQyMzctZjRjNy00YWRhLWI3MzItNzg3OTFiMjgwNmNhIiwiaXNzIjoiaHR0cHM6Ly9pYW11c2VyLmt1YmUudWF0aXNiYW5rL2F1dGgvcmVhbG1zL21haW4iLCJhdWQiOlsiYnJva2VyIiwiYWNjb3VudCJdLCJzdWIiOiIwYjE3YmFlOC02NzE5LTQzZDEtODM4Mi0xNDlmMWQ4ZGUxYWYiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJ1aS1uYXItY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6ImE0NzRkMmY4LWY1Y2UtNDBlMi1hNTI3LTU0NGJlYTM0M2JlYSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2VhZGVza3RvcHVhdC5nbS5pc2JhbmsuY29tLnRyIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1tYWluIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYnJva2VyIjp7InJvbGVzIjpbInJlYWQtdG9rZW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6ImE0NzRkMmY4LWY1Y2UtNDBlMi1hNTI3LTU0NGJlYTM0M2JlYSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiMjAxNDc3In0.VZkZ5PQ0WfcpEDzr3MiiuoNbZL43xvg8ZIsFz-JXCaRR3TdEi9pEnzwWIxsxBfR5H-KMfRSZ7WqSVCtR_rExtzXRkXE_BlAeNV-WYTs9A3RO9NN1ylhkj4-XapFR_Ew02ljfZK8ID0JGNk8o8RpjhxLA8nPGt0kjjTruhKye9nnbimazZ2rtCx70VuzY0sYmbLx2CT9TNCY0K33EURgkfLNnRass9EzWwZa3tdlwt654ta_dlj0gCbFTlCBDUgSCs-7J-UNDQHf7ijyQYLF7ltlEyaek4I1PQrfo_XCM-d7x4IdMWvscHipteo0R1-0-0A817y-Ncrd0EUAnf44hbQ";
+            } else if (key == "userid") {
+                return "59528";
+            } else if (key == "branchCode") {
+                return 4299;
             }
 
         },
