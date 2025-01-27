@@ -1,0 +1,50 @@
+backendInf:
+  Backend: Rally
+  isKibanaLogEnabled: false
+  containerName: NAR
+  PredefinedBackendHeaders:
+    Rally:
+      x-rly-tenant:
+        overwrite: false
+        value: 1
+      x-rly-session:
+        overwrite: false
+        value: 1
+      x-rly-ins-unit:
+        overwrite: false
+        value: 'cs:branchCode'
+      x-rly-user-id:
+        overwrite: false
+        value: 'cs:userid'
+  DomainModuleList:
+    timemanagement: /microui/timemanagement/compVNames_timemanagement.js
+  Header:
+    x-rly-user-id:
+      overwrite: false
+      value: 'cs:userid'
+    x-rly-ins-unit:
+      overwrite: false
+      value: 'cs:branchCode'
+    Content-Type:
+      overwrite: true
+      value: application/json
+    userId:
+      overwrite: false
+      value: 'cs:userid'
+    corrr:
+      overwrite: false
+      value: test3
+    X-Customer:
+      overwrite: false
+      value: 'cs:customer'
+    LtpaToken:
+      overwrite: false
+      value: 'cs:token'
+    Authorization:
+      overwrite: false
+      value: 'cs:authorization'
+    Accept:
+      overwrite: false
+      value: '*/*'
+HeaderExceptionList:
+  login: '/services/authorization/api/authentication/authenticate'
