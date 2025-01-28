@@ -15,7 +15,7 @@ excludeInSearch: true
 
 - You can simulate it in Studio by using pipeline. For more detailed information about Nar pipeline usage in Studio, click <a href="https://jira.isbank/confluence/display/JE/5.+Studio+Integration+Of+UI+Projects" target="_blank">See More</a>.
 
-<img src="https://stechq.github.io/cdn/documentation/nar/nar_Container_Services_File_getHeader.png" width="640" />
+<img src="https://stechq.github.io/cdn/documentation/nar/nar_Container_Services_File.png" width="640" />
 <br/>
 
 - For more detailed information about **header screenName and consumerCode**, click <a href="https://jira.isbank/confluence/display/KEGP/Nar+-+Quick+Header" target="_blank">**Nar - Plateau Header**</a>.
