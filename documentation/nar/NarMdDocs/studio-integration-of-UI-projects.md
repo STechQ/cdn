@@ -42,6 +42,12 @@ There should be a folder starting with **ui-[ProjectName]** at the root and page
 <img src="https://stechq.github.io/cdn/documentation/nar/nar_create_ui.png" width="240" />
 
 ###  **3.2.Using NAR container services file in Studio**
+Container Services File is a structure that enables communication between UI pages and the NAR shell. It is used to receive information from NAR or send information to NAR. 
+
+**For example:**<br/>
+1.Retrieve the **login user information** from NAR.<br/>
+2.Add **IAM token (authorization and ltpatoken) information** from NAR to the service header in service requests made from UI pages.<br/>
+3.Add **consumer code information** from NAR to the service header in service requests made from UI pages.<br/>
 
 - In Studio, add a **Container Services File** under **"UI Settings"**. 
 - Open the <a href="https://stechq.github.io/cdn/documentation/nar/containerServices.ts" target="_blank">containerServices.ts</a> file with Notepad++ and add its content to the **Container Services File**.
