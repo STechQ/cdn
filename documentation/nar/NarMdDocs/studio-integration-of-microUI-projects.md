@@ -119,7 +119,7 @@ For more detailed information about pipeline, click <a href="https://docs.onplat
     ```
 - You can simulate the **getHeaderConsumerCode, getHeader, and getCorrelationId** methods in the **Container Services File.**
 
-    <img src="https://stechq.github.io/cdn/documentation/nar/nar_Container_Services_File.png" width="640" />
+    <img src="https://stechq.github.io/cdn/documentation/nar/nar_Container_Services_File_getHeader.png" width="640" />
 
 
 <br/>
