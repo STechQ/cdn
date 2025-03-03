@@ -2634,6 +2634,7 @@ var containerServices = {
         }
     },
     customerContextCb: () => {
+        // BİREYSEL  müşteri için
         return {
             "ownerBranchCode": "1299",
             "customerSegmentCode": "2",
@@ -2656,6 +2657,31 @@ var containerServices = {
             "suspectProspect": false,
             "individualCorporate": false
         }
+
+        // TİCARİ  müşteri için
+        // {
+        //     "ownerBranchCode": "4299",
+        //     "customerSegmentCode": "4",
+        //     "extraEmail1": "aylin.cokcan@softtech.com.tr",
+        //     "extraEmail2": "aylin.cokcan@softtech.com.tr",
+        //     "extraEmail3": "aylin.cokcan@softtech.com.tr",
+        //     "extraEmail4": "aylin.cokcan@softtech.com.tr",
+        //     "customerTaxId": "2010101616",
+        //     "customerNumber": "161082005",
+        //     "companyName": "90İST İNŞAAT SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+        //     "customerName": "90İST İNŞAAT SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+        //     "telgrafNo": "",
+        //     "ownerBranchCodeDesc": "BASKENT/ANKARA",
+        //     "passportNo": "2010101616",
+        //     "customerSegment": "Ticari",
+        //     "customerType": "CORPORATE",
+        //     "customerPhoneNumbers": "905370320970,902222121211,902287854263,902224544547,902228878778,902164878777,902248787878,902164545454,902325454545,902367878787,902165526298,",
+        //     "firstName": "90İST İNŞAAT SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+        //     "isMernisMatch": "false",
+        //     "customerEmail": "aylin.cokcan@softtech.com.tr",
+        //     "suspectProspect": false,
+        //     "individualCorporate": false
+        // }
     },
     extensions: {
         sampleFunc: () => { console.log("sampleFunc executed") },
