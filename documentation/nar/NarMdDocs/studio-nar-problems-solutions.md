@@ -29,7 +29,7 @@ excludeInSearch: true
 
 ### **1.4.Retrieve the user information logged into NAR**
 
-To **retrieve the user information logged into NAR** on the UI page, the following command is used. You can get this response when you open the screen within NAR because the NAR shell provides this information. Therefore, you cannot get this information while testing in Studio. If you are in Studio, you can simulate it by using **Container Services File**.
+To **retrieve the user information logged into NAR** on the UI page, the following command is used. You can get this response when you open the screen within NAR because the NAR shell provides this information. Therefore, you cannot get this information while testing in Studio. If you are in Studio, you can simulate it by using **Container Services File**, click <a href="https://jira.isbank/confluence/display/JE/5.+Studio+Integration+Of+UI+Projects" target="_blank">"Using NAR container services file in Studio"</a>.
 
 ```ts
 let userContext: any = quick.containerServices?.getUserContext?.(); 
@@ -38,7 +38,18 @@ let userContext: any = quick.containerServices?.getUserContext?.();
 <img src="https://stechq.github.io/cdn/documentation/nar/nar_Container_Services_File_getUserContext.png" width="640" />
 <br/>
 
-### **1.5.Using dchost.print and dchost.scan methods on the UI page**
+### **1.5.Retrieve the customer information acted on in the NAR** 
+
+To **retrieve the customer information acted on in the NAR** on the UI page, the following command is used. You can get this response when you open the screen within NAR because the NAR shell provides this information. Therefore, you cannot get this information while testing in Studio. If you are in Studio, you can simulate it by using **Container Services File**, click <a href="https://jira.isbank/confluence/display/JE/5.+Studio+Integration+Of+UI+Projects" target="_blank">"Using NAR container services file in Studio"</a>.
+
+```ts
+let customerContext: any = quick.containerServices?.getCustomerContext?.();
+```
+<br/>
+<img src="https://stechq.github.io/cdn/documentation/nar/nar_Container_Services_File_getCustomerContext.png" width="640" />
+<br/>
+
+### **1.6.Using dchost.print and dchost.scan methods on the UI page**
 
 - The following commands are used within the UI page. 
 

@@ -34,9 +34,10 @@ For **videos** about create microUI project, click <a href="https://jira.isbank/
 Container Services File is a structure that enables communication between UI pages and the NAR shell. It is used to receive information from NAR or send information to NAR. 
 
 **For example:**<br/>
-1.Retrieve the **login user information** from NAR.<br/>
-2.Add **IAM token (authorization and ltpatoken) information** from NAR to the service header in service requests made from UI pages.<br/>
-3.Add **consumer code information** from NAR to the service header in service requests made from UI pages.<br/>
+1. Retrieve the **login user information** from NAR.<br/>
+2. Retrieve the **customer information acted on** in the NAR.<br/>
+3. Add **IAM token (authorization and ltpatoken) information** from NAR to the service header in service requests made from UI pages.<br/>
+4. Add **consumer code information** from NAR to the service header in service requests made from UI pages.<br/>
 
 - In Studio, add a **Container Services File** under **"UI Settings"**. 
 - Open the <a href="https://stechq.github.io/cdn/documentation/nar/containerServices.ts" target="_blank">containerServices.ts</a> file with Notepad++ and add its content to the **Container Services File**.
