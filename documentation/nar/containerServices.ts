@@ -10,7 +10,6 @@ var containerServices = {
     biometricTechSign: (reqData, pdfData) => { },
     openWindow: (sWindowTitle, sUrl, options) => { },
     resourceCb: (resource) => { },
-    customerContextCb: () => { },
     callMessageBox: (messageType, messages, title) => { },
     userContextCb: () => {
 
@@ -2632,6 +2631,30 @@ var containerServices = {
                 "messageResponseBO": [],
                 "continueFlag": true
             }
+        }
+    },
+    customerContextCb: () => {
+        return {
+            "ownerBranchCode": "1299",
+            "customerSegmentCode": "2",
+            "customerCitizenId": "12308055880",
+            "customerNumber": "161210860",
+            "companyName": "",
+            "customerName": "İBRAHİM ",
+            "telgrafNo": "",
+            "birthDate": "28/08/1979",
+            "ownerBranchCodeDesc": "ISTANBUL",
+            "passportNo": "12308055880",
+            "customerSegment": "İşletme",
+            "customerType": "INDIVIDUAL",
+            "customerPhoneNumbers": "905363171367,",
+            "firstName": "İBRAHİM",
+            "secondName": "",
+            "customerSurname": "AYDIN",
+            "isMernisMatch": "true",
+            "customerNationality": "TR",
+            "suspectProspect": false,
+            "individualCorporate": false
         }
     },
     extensions: {
