@@ -9,7 +9,14 @@ var containerServices = {
     biometric: (data) => { },
     biometricTechSign: (reqData, pdfData) => { },
     openWindow: (sWindowTitle, sUrl, options) => { },
-    resourceCb: (resource) => { },
+    resourceCb: (resource) => {
+
+        // rota yetkisi kendisi
+        return resource;
+
+        // rota yetkisi  yoksa
+       // return undefined;
+    },
     callMessageBox: (messageType, messages, title) => { },
     userContextCb: () => {
 
