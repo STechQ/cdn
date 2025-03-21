@@ -159,7 +159,7 @@ For more detailed information about pipeline, click <a href="https://docs.onplat
 
 
 
-## **5.Menu end UI Address Definition Into The NAR**
+## **5.Menu and UI Address Definition Into The NAR**
 
 - For menu, UI page and service definitions methods document, refer to the  <a href="https://jira.isbank/confluence/pages/viewpage.action?pageId=248876546" target="_blank">**Plateau UI and Service Definitions Methods Analysis Document.**</a>   
 
