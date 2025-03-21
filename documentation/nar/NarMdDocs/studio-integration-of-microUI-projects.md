@@ -179,7 +179,7 @@ For more detailed information about **complicare microUI codes**, click <a href=
 For more detailed information about **complicare-platform microUI codes**, click <a href="https://scoretfs.isbank/ISBANK/MIPINTRA/_git/complicare-platform" target="_blank">platform codes</a>
 
 
-## **5.Menu and UI Address Definition Into The NAR** 
+## **5.Menu and microUI Address Definition Into The NAR** 
 
 - For menu, UI page and service definitions methods document, refer to the  <a href="https://jira.isbank/confluence/pages/viewpage.action?pageId=248876546" target="_blank">**Plateau UI and Service Definitions Methods Analysis Document.**</a>   
 
