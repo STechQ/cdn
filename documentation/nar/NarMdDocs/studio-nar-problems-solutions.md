@@ -393,7 +393,7 @@ if (quick.containerServices.extensions?.customFunctions?.navigationManager?.go) 
 - **On the Plateau UI page side:**            
     - Get the parameter value defined in the NAR with the spesific key.
       ```js
-        let pageUrlParams = quick.containerServices?.extensions?.getQueryParamsModel?.("myKey");
+        let queryParams = quick.containerServices?.extensions?.getQueryParamsModel?.("myKey");
         ```
 
 ### **2.4. Getting the parameter value defined in the NAR on the Plateau UI page side**        
@@ -411,5 +411,5 @@ if (quick.containerServices.extensions?.customFunctions?.navigationManager?.go) 
 
      > getQueryParamsModel(key: string)
     ```js
-        let pageUrlParams = quick.containerServices?.extensions?.getQueryParamsModel?.("myKey");
+        let queryParams = quick.containerServices?.extensions?.getQueryParamsModel?.("myKey");
     ``` 

@@ -2699,10 +2699,10 @@ var containerServices = {
         getQueryParams: () => {
             return myQueryParams;
         },
-        setQueryParamsModel: (key: string, value: string) => {
+        setQueryParamsModel: (key, value) => {
             myQueryParamsModel[key] = value;
         },
-        getQueryParamsModel: (key: string) => {
+        getQueryParamsModel: (key) => {
             return myQueryParamsModel[key];
         },
         getHeaderConsumerCode: () => {
