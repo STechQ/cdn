@@ -1,5 +1,6 @@
 //#region JS Section
 var myQueryParams = "";
+var myQueryParamsModel = {};
 var containerServices = {
     activeRendererCb: () => { },
     authenticatedCb: () => { },
@@ -15,7 +16,7 @@ var containerServices = {
         return resource;
 
         // rota yetkisi  yoksa
-       // return undefined;
+        // return undefined;
     },
     callMessageBox: (messageType, messages, title) => { },
     userContextCb: () => {
@@ -2697,6 +2698,12 @@ var containerServices = {
         },
         getQueryParams: () => {
             return myQueryParams;
+        },
+        setQueryParamsModel: (key: string, value: string) => {
+            myQueryParamsModel[key] = value;
+        },
+        getQueryParamsModel: (key: string) => {
+            return myQueryParamsModel[key];
         },
         getHeaderConsumerCode: () => {
 

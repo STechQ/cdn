@@ -368,13 +368,14 @@ if (quick.containerServices.extensions?.customFunctions?.navigationManager?.go) 
 }
 ```
 
-### **2.3. To open the Quick screen from the PEGA screen:**
+### **2.3. To open the Plateau UI page from the PEGA screen:**
 
 - **On the NAR side:**
-    - If there is a parameter, the parameter information is set:
+
+    - If there is a parameter, **set the parameter using spesific key**.
 
     ```js
-    top.advisorDesktop.setQueryParams("?assessmentId=111&customerNumber=161688755&processId=TAHSIS24-23236");
+    top.advisorDesktop.setQueryParamsModel("myKey", "?assessmentId=111&customerNumber=161688755&processId=TAHSIS24-23236");
     ```
 
     - The page is called.
@@ -390,8 +391,25 @@ if (quick.containerServices.extensions?.customFunctions?.navigationManager?.go) 
             
             ```
 - **On the Plateau UI page side:**            
-    - The sent parameters are read.
+    - Get the parameter value defined in the NAR with the spesific key.
       ```js
-        let pageUrlParams = quick.containerServices?.extensions?.getQueryParams?.();
-        //Sample: "?assessmentId=111&customerNumber=161688755&processId=TAHSIS24-23236"
+        let pageUrlParams = quick.containerServices?.extensions?.getQueryParamsModel?.("myKey");
         ```
+
+### **2.4. Getting the parameter value defined in the NAR on the Plateau UI page side**        
+
+- **On the NAR side:**
+    Set the parameter value with the spesific key.
+
+    > setQueryParamsModel(key: string, value: string)
+    ```js
+    top.advisorDesktop.setQueryParamsModel("myKey", "myValue");
+    ```
+
+- **On the Plateau UI page side:**  
+     Get the parameter value defined in the NAR with the spesific key.
+
+     > getQueryParamsModel(key: string)
+    ```js
+        let pageUrlParams = quick.containerServices?.extensions?.getQueryParamsModel?.("myKey");
+    ``` 
