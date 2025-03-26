@@ -1469,3 +1469,190 @@ body .v-application .inboxList .theme--light.v-list-item:hover::before {
   opacity: 0 !important;
 }
 
+body .v-application .inbox-col.col {
+  flex: 1 !important;
+  min-width: 500px !important;
+}
+
+body .v-application .inboxTableRowPointer tbody tr :hover {
+  cursor: pointer;
+}
+
+body .v-application .paginationBorder .v-pagination.theme--light .v-pagination__item,
+body .v-application .paginationBorder .v-pagination.theme--light .v-pagination__navigation {
+  border: 0px !important;
+  box-shadow: none !important;
+}
+
+body .v-application .inboxDatatableFilterTreeView .v-treeview-node__level {
+  width: 0;
+}
+
+body .v-application .inboxDatatableFilterTreeView .v-treeview-node__checkbox {
+  margin-left: 0;
+}
+
+body .v-application .inboxDatatableFilterTreeView .v-treeview-node__root {
+  padding-left: 4px;
+}
+
+body .v-application .inboxTableGelenKutusu>.v-data-table__wrapper>table>tbody>tr>td,
+.inboxTableGelenKutusu>.v-data-table__wrapper>table>tbody>tr>th,
+.inboxTableGelenKutusu>.v-data-table__wrapper>table>tfoot>tr>td,
+.inboxTableGelenKutusu>.v-data-table__wrapper>table>tfoot>tr>th,
+.inboxTableGelenKutusu>.v-data-table__wrapper>table>thead>tr>td,
+.inboxTableGelenKutusu>.v-data-table__wrapper>table>thead>tr>th {
+  padding: 0 0 0 5px;
+}
+
+body .v-application .InboxUnitBlockTreeviewPointer.theme--light.v-treeview {
+  cursor: pointer;
+}
+
+/*body .v-application .inbox-unit-tree-item .v-treeview-node__root {    
+  color: #FFFFFF !important;
+}
+body .v-application .inbox-unit-tree-item .v-treeview-node__root:hover {    
+  color: #000000 !important;
+}*/
+body .v-application .inboxTableGelenKutusu .v-data-table__wrapper {
+  overflow-y: hidden !important;
+}
+
+body .v-application .inboxmenu-side-bar-card .v-navigation-drawer-mini-variant.v-navigation-drawer-custom-mini-variant .v-list-item {
+  justify-content: unset;
+}
+
+body .v-application #loadingRow {
+  position: absolute;
+  z-index: 9999;
+}
+
+body .v-application #loadingCol {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+body .v-application .inboxMenuTreeview .v-treeview-node__root:hover:before {
+  opacity: 0.1 !important;
+  color: #42a5f5 !important;
+  caret-color: #42a5f5 !important;
+}
+
+body .v-application .InboxUnitBlockTreeviewPointer .v-treeview-node__root.v-treeview-node--active.primary--text {
+  background: #2c5a86 !important;
+  color: unset !important;
+  caret-color: unset !important;
+}
+
+body .v-application .InboxUnitBlockTreeviewPointer .v-treeview-node__root.v-treeview-node--active .v-treeview-node__prepend i,
+body .v-application .InboxUnitBlockTreeviewPointer .v-treeview-node__root.v-treeview-node--active .v-treeview-node__prepend span,
+body .v-application .InboxUnitBlockTreeviewPointer .v-treeview-node__root.v-treeview-node--active .v-treeview-node__label span,
+body .v-application .InboxUnitBlockTreeviewPointer .v-treeview-node__root.v-treeview-node--active .v-treeview-node__label span,
+body .v-application .InboxUnitBlockTreeviewPointer .v-treeview-node__root.v-treeview-node--active .v-treeview-node__append span,
+body .v-application .InboxUnitBlockTreeviewPointer .v-treeview-node__root.v-treeview-node--active button::before {
+  color: #FFFFFF !important;
+}
+
+/*
+body .v-application .InboxUnitBlockTreeviewPointer.inbox-unit-tree-item .v-treeview-node__root.v-treeview-node--active.primary--text {
+        background: #FFFFFF !important;
+        color: #FFFFFF !important;
+}
+body .v-application .InboxUnitBlockTreeviewPointer.inbox-unit-tree-item .v-treeview-node__root.v-treeview-node--active .v-treeview-node__prepend i,
+body .v-application .InboxUnitBlockTreeviewPointer.inbox-unit-tree-item .v-treeview-node__root.v-treeview-node--active .v-treeview-node__prepend span,
+body .v-application .InboxUnitBlockTreeviewPointer.inbox-unit-tree-item .v-treeview-node__root.v-treeview-node--active .v-treeview-node__label span,
+body .v-application .InboxUnitBlockTreeviewPointer.inbox-unit-tree-item .v-treeview-node__root.v-treeview-node--active .v-treeview-node__label span,
+body .v-application .InboxUnitBlockTreeviewPointer.inbox-unit-tree-item .v-treeview-node__root.v-treeview-node--active .v-treeview-node__append span,
+body .v-application .InboxUnitBlockTreeviewPointer.inbox-unit-tree-item .v-treeview-node__root.v-treeview-node--active button::before {
+        color: #000000 !important;
+}*/
+
+body .v-application .inboxMenuTreeview .v-treeview-node__root {
+  cursor: pointer !important;
+}
+
+body .v-application .inboxMenuTreeview .v-treeview-node--disabled>.v-treeview-node__root {
+  cursor: default !important;
+}
+
+body .v-application .InboxUnitBlockTreeviewPointer .v-treeview-node__root {
+  cursor: default !important;
+}
+
+body .v-application .inboxMenuTreeview .v-treeview-node--disabled>.v-treeview-node__root:before,
+body .v-application .inboxMenuTreeview .v-treeview-node--disabled>.v-treeview-node__root:hover:before {
+  opacity: 0 !important;
+  color: white !important;
+  caret-color: white !important;
+}
+
+body .v-application #VContainerCompGelenKutusu .pe-none,
+body .v-application #VContainerCompIslemArama .pe-none {
+  pointer-events: none;
+}
+
+body .v-application #VContainerCompGelenKutusu .v-inline-date-picker-div-class .v-input__icon--prepend-inner,
+body .v-application #VContainerCompIslemArama .v-inline-date-picker-div-class .v-input__icon--prepend-inner {
+  cursor: default;
+}
+
+body .v-application #VContainerCompGelenKutusu .v-inline-date-picker-div-class .v-input__slot,
+body .v-application #VContainerCompGelenKutusu .v-inline-date-picker-div-class .v-text-field__slot> :first-child,
+body .v-application #VContainerCompIslemArama .v-inline-date-picker-div-class .v-input__slot,
+body .v-application #VContainerCompIslemArama .v-inline-date-picker-div-class .v-text-field__slot> :first-child {
+  cursor: pointer;
+}
+
+.shellContainerTarget:has(#container_dt_pota) {
+  background: #eff6fd !important;
+  padding: 16px 0;
+}
+
+#container_dt_pota td[role="columnheader"]>div.dx-datagrid-text-content {
+  font-weight: bold !important;
+}
+
+#container_dt_pota td[role="columnheader"],
+#container_dt_pota td[role="gridcell"] {
+  line-height: 36px !important;
+}
+
+#container_dt_pota .dx-datagrid .dx-datagrid-headers .dx-row>td {
+  background-color: #6caff1 !important;
+}
+
+#container_dt_pota .dx-datagrid .dx-datagrid-headers .dx-row>td {
+  color: white !important;
+  font-weight: bold;
+}
+
+#container_dt_pota .dx-datagrid .dx-datagrid-headers .dx-row>td .dx-header-filter {
+  color: white !important;
+}
+
+#container_dt_pota .dx-item.dx-toolbar-item.dx-toolbar-item-auto-hide.dx-toolbar-text-auto-hide {
+  display: flex;
+  align-items: center;
+}
+
+#container_dt_pota .dx-item.dx-toolbar-item.dx-toolbar-item-auto-hide.dx-toolbar-text-auto-hide::before {
+  content: "SÃ¼tun SeÃ§ici";
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  margin-right: 12px;
+}
+
+#btn_SuccessCustomerPota {
+  pointer-events: none;
+  cursor: default;
+}
+
+body .v-application .disabled-table {
+  pointer-events: none !important;
+  opacity: 0.5 !important;
+  user-select: none !important;
+  overflow: hidden !important;
+}
