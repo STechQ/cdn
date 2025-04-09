@@ -59,7 +59,7 @@ if(resource){
     // Yetki Var
 }
 else{
-    // Yetki yok
+    // Yetki Yok
 }
 ```
 <br/>
