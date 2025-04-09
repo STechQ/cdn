@@ -55,6 +55,12 @@ To **retrieve whether the user has ROTA authorization** on the UI page, the foll
 
 ```ts
 let resource: any = quick.containerServices?.getResource?.("EkrankisitiRG");
+if(resource){
+    // Yetki Var
+}
+else{
+    // Yetki yok
+}
 ```
 <br/>
 <img src="https://stechq.github.io/cdn/documentation/nar/nar_Container_Services_File_getResource.png" width="640" />
