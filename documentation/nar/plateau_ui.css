@@ -642,14 +642,14 @@ button.v-btn.v-btn--contained.theme--light {
 /* GOLDEN LAYOUT SPECIFIC VALUES: START */
 
 /* Overright (No Class) */
-/* Golden Layout pencere arka plan rengini sayfanÄ±n arka plan rengine esitler */
+/* Golden Layout pencere arka plan rengini sayfanın arka plan rengine esitler */
 .lm_goldenlayout {
   background: none !important;
   background-color: var(--pageBackground) !important;
 }
 
 /* Overright (No Class) */
-/* Golden Layout Tab KulakÃ§Ä±klarÄ±nÄ±n arka plan rengi ve yÃ¼kseklik dÃ¼zenlemesi */
+/* Golden Layout Tab Kulakçıklarının arka plan rengi ve yükseklik düzenlemesi */
 .lm_header {
   background-color: var(--lm-header-bg-color) !important;
 }
@@ -662,7 +662,7 @@ button.v-btn.v-btn--contained.theme--light {
 }
 
 /* Overright (No Class) */
-/* goldenLayout aktif olmayan kulakÃ§Ä±klar iÃ§in */
+/* goldenLayout aktif olmayan kulakçıklar için */
 /* Background color of golden layout header component */
 
 .lm_header .lm_tab {
@@ -675,20 +675,20 @@ button.v-btn.v-btn--contained.theme--light {
 }
 
 /* Overright (No Class) */
-/* goldenLayout aktif kulakÃ§Ä±klar iÃ§in */
+/* goldenLayout aktif kulakçıklar için */
 .lm_tab.lm_active {
   background: white !important;
   color: var(--primary) !important;
 }
 
 /* Overright (No Class) */
-/*goldenLayout ayÄ±rÄ±cÄ±*/
+/*goldenLayout ayırıcı*/
 .lm_splitter {
   background-color: var(--pageBackground) !important;
 }
 
 /* Overright (No Class) */
-/*goldenLayout kulakÃ§Ä±k sol boÅŸluÄŸu iÃ§in*/
+/*goldenLayout kulakçık sol boşluğu için*/
 ul.lm_tabs {
   padding: 0;
 }
@@ -1637,7 +1637,7 @@ body .v-application #VContainerCompIslemArama .v-inline-date-picker-div-class .v
 }
 
 #container_dt_pota .dx-item.dx-toolbar-item.dx-toolbar-item-auto-hide.dx-toolbar-text-auto-hide::before {
-  content: "SÃ¼tun SeÃ§ici";
+  content: "Sütun Seçici";
   color: #000;
   font-size: 14px;
   font-weight: bold;
