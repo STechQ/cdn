@@ -346,6 +346,121 @@ function createTimeString() {
 ```
 
 
+### **1.8.Efay Document Scanning DcHost integration on the UI page**
+
+- The following commands are used within the UI page. 
+
+```ts
+
+//api/scan_and_saveInEFAY: http://127.0.0.1:4852/BranchDeviceConnector/ScannerServiceRest/ScanAndSaveInEFAY?format=json
+
+let ltpaToken = quick.cookie.get('LtpaToken2');
+let userContext: any = quick.containerServices.getUserContext();
+let customerContext: any = quick.containerServices.getCustomerContext();
+
+let requestObj: any = {
+    "LtpaTokenStr": ltpaToken,
+    "ReplacingDocumentId": null,
+    "DocumentStorageType": "ELECTRONIC",
+    "UserContext": {
+        "HostName": userContext?.hostName ?? null,
+        "IpAddress": userContext?.ip ?? null,
+        "Locale": userContext?.locale ?? null,
+        "OrganizationUnitCode": userContext?.workstationBO?.organizationUnitCode?.toString() ?? null,
+        "OrganizationUnitName": userContext?.workstationBO?.organizationUnitName?.toString() ?? null,
+        "Title": userContext?.title ?? null,
+        "UserId": userContext?.userid ?? null,
+        "Username": userContext?.userid ?? null,
+        "UserNameAndSurname": (userContext?.firstname ?? '') + ' ' + (userContext?.lastname ?? ''),
+        "Email": userContext?.email ?? null,
+        "WorkstationCode": userContext?.workstationBO?.code?.toString() ?? null,
+        "AccountName": userContext?.workstationBO?.organizationUnitName ?? null,
+        "CustomerContext": {
+            "CustomerCitizenId": customerContext?.customerCitizenId ?? null,
+            "CustomerNumber": customerContext?.customerNumber ?? null,
+            "CustomerName": customerContext?.customerName ?? null,
+            "CustomerSurname": customerContext?.customerSurname ?? null,
+            "CustomerTaxId": customerContext?.customerTaxId ?? null,
+            "CustomerType": customerContext?.customerType ?? null,
+            "CustomerEmail": customerContext?.customerEmail ?? null,
+            "CustomerSegment": customerContext?.customerSegment ?? null,
+            "IntermediaryCitizenId": customerContext?.intermediaryCitizenId ?? null,
+            "IntermediaryCustomerNumber": customerContext?.intermediaryCustomerNumber ?? null,
+            "IntermediaryName": customerContext?.intermediaryName ?? null,
+            "IntermediarySurname": customerContext?.intermediarySurname ?? null,
+            "IntermediaryTaxId": customerContext?.intermediaryTaxId ?? null,
+            "CompanyName": customerContext?.companyName ?? null,
+            "FirstName": customerContext?.firstName ?? null,
+            "SecondName": customerContext?.secondName ?? null,
+            "KktcId": customerContext?.kktcId ?? null,
+            "PassportNo": customerContext?.passportNo ?? null,
+            "TelgrafNo": customerContext?.telgrafNo ?? null,
+            "individualCorporate": {
+                "b": false
+            }
+        }
+    },
+    "ApplicationKey": "8b9ada0b-ab9a-4f10-be3b-cba3c29b7ce9",
+    "RootDocumentId": null,
+    "ScanColorType": "grayscale",
+    "ScanResolution": "150",
+    "ScanDuplex": null,
+    "isCroppingForced": null,
+    "GetContent": false,
+    "SIID": null,
+    "Operation_Date": null,
+    "isVoucher": false,
+    "DocumentInfo": {
+        "Item": "BHS",
+        "ItemElementName": "contentTypeVersion"
+    },
+    "Metadata": [
+        {
+            "MetadataCode": "epaci4",
+            "Value": (<any>quick.containerServices).getCustomerContext().customerName ?? null
+        },
+        {
+            "MetadataCode": "hnea7f",
+            "Value": (<any>quick.containerServices).getCustomerContext().customerCitizenId ?? null
+        },
+        {
+            "MetadataCode": "CRBCustomerNo",
+            "Value": (<any>quick.containerServices).getCustomerContext().customerNumber ?? null
+        }
+    ],
+    "base64Content": null,
+    "fileExtension": null
+}
+
+try {
+    let ret = (async () => {
+        let scanAndSaveInEFAY: IRequest = {
+            url: "api/scan_and_saveInEFAY",
+            data: requestObj,
+            blockRender: false,
+            http: "post",
+            onFail: null,
+            onSuccess: null,
+            responseField: "data"
+        };
+        let response = await quick.Request.async(scanAndSaveInEFAY);
+
+        if (response === null || response.data.ReturnCode === null) {
+            components.alertMessagesComp.alertError({ param1: "DcHost Başlatılamadı!" });
+        } else if (response.data.ReturnCode != 0) {
+            components.alertMessagesComp.alertError({ param1: "DcHost Başlatılamadı!" });
+            quick.EM.trace("!!!ScanAndSaveInEFAY Hata Aldı: " + response.data.ResultMessage );
+        } else if (response.data.ReturnCode === 0 && response.data.ContentManagerID !== undefined) {
+            components.alertMessagesComp.alertSuccess({ param1: "Döküman Başarılı bir şekilde yüklenmiştir."});
+            var storeSessionEfayId = { "efayId": response.data.ContentManagerID.toString() }
+            quick.store.set('$storeSessionEfayId', storeSessionEfayId);
+        }
+    })()
+} catch (exception) {
+    quick.EM.trace("exception" + exception);
+}
+```
+
 ## **2.Nar Problems**
 
 :::info **Note**
