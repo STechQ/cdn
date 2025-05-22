@@ -68,12 +68,21 @@ For more detailed information about pipeline, click <a href="https://docs.onplat
 - Write the following code in the Pipeline **onBeforeRequest** event.
     ```ts
     declare var requestObject: IRequest;
-    
 
-    requestObject.headers["X-Consumer"] = quick.containerServices.extensions?.getHeaderConsumerCode();
-    requestObject.headers["x-isb-client"] = quick.containerServices.extensions?.getHeader('','isbClient');
+    if (!requestObject.headers["X-Consumer"]) {
+        requestObject.headers["X-Consumer"] = quick.containerServices.extensions?.getHeaderConsumerCode();
+    }
+
+    requestObject.headers["x-isb-client"] = quick.containerServices.extensions?.getHeader('', 'isbClient');
     requestObject.headers["x-rly-corr"] = quick.containerServices.extensions.getCorrelationId();
     requestObject.headers["Accept-Language"] = "tr-TR";
+
+    // Studio'da geliştirme aşamasında IAM login ( iamuserTokenTest) sayfası ile alınan tokenın yazılması
+    let token = quick.store.get('$iamToken');
+    if (token) {
+        requestObject.headers["Authorization"] = 'Bearer ' + token;
+    }
+    ////////////////////////////////////////////
 
     quick.EM.trace("requestObject1")
     quick.EM.trace(requestObject);
@@ -87,40 +96,40 @@ For more detailed information about pipeline, click <a href="https://docs.onplat
     }
 
     let customConsumerCode = quick.store.get('$customConsumerCode');
-    if(customConsumerCode != null && customConsumerCode != undefined && customConsumerCode != '') {
+    if (customConsumerCode != null && customConsumerCode != undefined && customConsumerCode != '') {
         requestObject.headers["X-Consumer"] = requestObject.headers["X-Consumer"].replace("TANE.ID", customConsumerCode);
     }
 
 
     let customScreenName = quick.store.get('$customScreenName');
-    if(requestObject.headers["screenName"] !=null && customScreenName != null && customScreenName != ''){
+    if (requestObject.headers["screenName"] != null && customScreenName != null && customScreenName != '') {
         requestObject.headers["x-isb-client"] = requestObject.headers["x-isb-client"].replace("NarCmmnScr", customScreenName);
     }
-    if(requestObject.headers["optionalBranchHeader"]){
+    if (requestObject.headers["optionalBranchHeader"]) {
 
 
-    // optionalHeaders
-    // optionalBranchHeader : {injectCustomer: true, onBehalfOfOrganizationUnitCode:1299}
-    if(JSON.parse(requestObject.headers["optionalBranchHeader"]).injectCustomer){
-    requestObject.headers["X-Customer"] = quick.containerServices.extensions?.getHeader('','customer');
-    }
+        // optionalHeaders
+        // optionalBranchHeader : {injectCustomer: true, onBehalfOfOrganizationUnitCode:1299}
+        if (JSON.parse(requestObject.headers["optionalBranchHeader"]).injectCustomer) {
+            requestObject.headers["X-Customer"] = quick.containerServices.extensions?.getHeader('', 'customer');
+        }
 
-    // x-isb-client: {"branch-v1" : {"workstationName": "0330X098", "organizationUnitCode": 4299, "tellerId":3, "screenName":"musara"}}
-    if(JSON.parse(requestObject.headers["optionalBranchHeader"]).onBehalfOfOrganizationUnitCode){
-    requestObject.headers["X-Customer"] = quick.containerServices.extensions?.getHeader('','customer');
-    var headerObj = JSON.parse(requestObject.headers["x-isb-client"]);
-    headerObj["branch-v1" ]["onBehalfOfOrganizationUnitCode"] =JSON.parse(requestObject.headers["optionalBranchHeader"]).onBehalfOfOrganizationUnitCode;
-    }
+        // x-isb-client: {"branch-v1" : {"workstationName": "0330X098", "organizationUnitCode": 4299, "tellerId":3, "screenName":"musara"}}
+        if (JSON.parse(requestObject.headers["optionalBranchHeader"]).onBehalfOfOrganizationUnitCode) {
+            requestObject.headers["X-Customer"] = quick.containerServices.extensions?.getHeader('', 'customer');
+            var headerObj = JSON.parse(requestObject.headers["x-isb-client"]);
+            headerObj["branch-v1"]["onBehalfOfOrganizationUnitCode"] = JSON.parse(requestObject.headers["optionalBranchHeader"]).onBehalfOfOrganizationUnitCode;
+        }
 
-    let headerObjectValues = quick.store.get('$specificHeader');
-    if (headerObjectValues && Array.isArray(headerObjectValues) && headerObjectValues.length > 0) {
-        headerObjectValues.forEach(headerInfo => {
-            requestObject[headerInfo.headerKey] = headerInfo.headerValue;
-        })
-    }
+        let headerObjectValues = quick.store.get('$specificHeader');
+        if (headerObjectValues && Array.isArray(headerObjectValues) && headerObjectValues.length > 0) {
+            headerObjectValues.forEach(headerInfo => {
+                requestObject[headerInfo.headerKey] = headerInfo.headerValue;
+            })
+        }
 
 
-    // optionalHeadersEnd
+        // optionalHeadersEnd
     }
     ```
 
