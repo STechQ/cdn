@@ -2732,6 +2732,9 @@ var containerServices = {
         getCorrelationId: () => {
             return 'UATVM042_4299-363b-4a41-8491-1c8b321c97e3';
         },
+        getNarUrl:() => {
+            return "http://eadesktopuat.gm.isbank.com.tr/Advisor/";
+        }
     }
 }
 
