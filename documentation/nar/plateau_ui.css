@@ -1404,7 +1404,6 @@ body .v-application .inboxtab:hover {
 
 body .v-application .v-tabs .v-tab--active.inboxtab:before {
   opacity: 0 !important;
-  ;
 }
 
 body .v-application .inboxtab .v-ripple__animation {
@@ -1649,6 +1648,10 @@ body .v-application .disabled-table {
   opacity: 0.5 !important;
   user-select: none !important;
   overflow: hidden !important;
+}
+
+body .v-application tr.unSelectedTableUAVT {   
+  background: #5b96ce !important;
 }
 
 .theme--light.v-text-field.v-input--is-disabled:not(.v-text-field--outlined) .v-input__slot  {
