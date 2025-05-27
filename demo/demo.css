@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+/* ------------------------------- */
+/*    PDS CSS CODE VERSION: 2.0    */
+/* ------------------------------- */
+
+
+/* PROJECT SPECIFIC VALUES: START */
+:root{
+      /* Primary Palette */
+      /* Choosen palette: light-green */
+      --primary:#8BC34A;
+      --primary-lighten-5:#F1F8E9;
+      --primary-lighten-4:#DCEDC8;
+      --primary-lighten-3:#C5E1A5;
+      --primary-lighten-2:#AED581;
+      --primary-lighten-1:#9CCC65;
+      --primary-darken-1:#7CB342;
+      --primary-darken-2:#689F38;
+      --primary-darken-3:#558B2F;
+      --primary-darken-4:#33691E;
+      /* Secondary Palette */
+      /* Choosen palette: blue-grey */
+      --secondary:#607D8B;
+      --secondary-lighten-5:#ECEFF1;
+      --secondary-lighten-4:#CFD8DC;
+      --secondary-lighten-3:#B0BEC5;
+      --secondary-lighten-2:#90A4AE;
+      --secondary-lighten-1:#78909C;
+      --secondary-darken-1:#546E7A;
+      --secondary-darken-2:#455A64;
+      --secondary-darken-3:#37474F;
+      --secondary-darken-4:#263238;
+       /* General Palette */
+      --accent:#cddc39; /* lime */
+      --error:#E96767;
+      --info:#3992D8;
+      --success:#58A25B;
+      --warning:#DB871F;
+  
+      /* Page Background: Try to use a light tone from secondary palette. */
+      --pageBackground:#ECEFF1; /* secondary lighten-5 */
+  
+      /* Text on primary, secondary and general palettes */
+      --darkTextColor:#000000;
+      --lightTextColor:#FFFFFF;
+  }
+/* PROJECT SPECIFIC VALUES: END */
+
+/* STANDARD CODE FOR EVERY PLATEAU PROJECT: START */
+.v-application,
+.v-application input,
+.v-application select,
+.v-application textarea { font-family:'Roboto', sans-serif !important; font-size:16px !important; }
+
+  body .v-application .text-h1,
+  body .v-application .text-h2,
+  body .v-application .text-h3,
+  body .v-application .text-h4,
+  body .v-application .text-h5,
+  body .v-application .text-h6,
+  body .v-application .text-display-4,
+  body .v-application .text-display-3,
+  body .v-application .text-display-2,
+  body .v-application .text-display-1,
+  body .v-application .text-headline,
+  body .v-application .text-title,
+  body .v-application .text-subtitle-1,
+  body .v-application .text-subtitle-2,
+  body .v-application .text-body-1,
+  body .v-application .text-body-2,
+  body .v-application .text-caption,
+  body .v-application .text-overline { font-family:'Roboto', sans-serif !important; line-height:normal !important; }
+
+  body .v-application .primary { background-color:#8BC34A !important; border-color:#8BC34A !important; }
+  body .v-application .primary { color:white !important; caret-color:white !important; }
+  body .v-application .primary.lighten-5 { background-color:#F1F8E9 !important; border-color:#F1F8E9 !important; }
+  body .v-application .primary.lighten-5 { color:black !important; caret-color:black !important; }
+  body .v-application .primary.lighten-4 { background-color:#DCEDC8 !important; border-color:#DCEDC8 !important; }
+  body .v-application .primary.lighten-4 { background-color:#DCEDC8 !important; border-color:#DCEDC8 !important; }
+  body .v-application .primary.lighten-3 { background-color:#C5E1A5 !important; border-color:#C5E1A5 !important; }
+  body .v-application .primary.lighten-2 { background-color:#AED581 !important; border-color:#AED581 !important; }
+  body .v-application .primary.lighten-1 { background-color:#9CCC65 !important; border-color:#9CCC65 !important; }
+  body .v-application .primary.darken-1 { background-color:#7CB342 !important; border-color:#7CB342 !important; }
+  body .v-application .primary.darken-2 { background-color:#689F38 !important; border-color:#689F38 !important; }
+  body .v-application .primary.darken-3 { background-color:#558B2F !important; border-color:#558B2F !important; }
+  body .v-application .primary.darken-4 { background-color:#33691E !important; border-color:#33691E !important; }
+
+  body .v-application .secondary { background-color:#607D8B !important; border-color:#607D8B !important; }
+  body .v-application .secondary.lighten-5 { background-color:#ECEFF1 !important; border-color:#ECEFF1 !important; }
+  body .v-application .secondary.lighten-4 { background-color:#CFD8DC !important; border-color:#CFD8DC !important; }
+  body .v-application .secondary.lighten-3 { background-color:#B0BEC5 !important; border-color:#B0BEC5 !important; }
+  body .v-application .secondary.lighten-2 { background-color:#90A4AE !important; border-color:#90A4AE !important; }
+  body .v-application .secondary.lighten-1 { background-color:#78909C !important; border-color:#78909C !important; }
+  body .v-application .secondary.darken-1 { background-color:#546E7A !important; border-color:#546E7A !important; }
+  body .v-application .secondary.darken-2 { background-color:#455A64 !important; border-color:#455A64 !important; }
+  body .v-application .secondary.darken-3 { background-color:#37474F !important; border-color:#37474F !important; }
+  body .v-application .secondary.darken-4 { background-color:#263238 !important; border-color:#263238 !important; }
+
+  body .v-application .accent { background-color:#cddc39 !important; border-color:#cddc39 !important; }
+  body .v-application .error { background-color:#E96767 !important; border-color:#E96767 !important; }
+  body .v-application .info { background-color:#3992D8 !important; border-color:#3992D8 !important; }
+  body .v-application .success { background-color:#58A25B !important; border-color:#58A25B !important; }
+  body .v-application .warning { background-color:#DB871F !important; border-color:#DB871F !important; }
+
+/* Dark text color */
+  body .v-application .primary.lighten-5,
+  body .v-application .primary.lighten-4,
+  body .v-application .primary.lighten-3,
+  body .v-application .primary.lighten-2,
+  body .v-application .primary.lighten-1,
+  body .v-application .secondary.lighten-5,
+  body .v-application .secondary.lighten-4,
+  body .v-application .secondary.lighten-3,
+  body .v-application .secondary.lighten-2,
+  body .v-application .secondary.lighten-1,
+  body .v-application .accent { color:#000000 !important; caret-color:#000000 !important; }
+/* Light text color */
+  body .v-application .primary,
+  body .v-application .primary.darken-1,
+  body .v-application .primary.darken-2,
+  body .v-application .primary.darken-3,
+  body .v-application .primary.darken-4,
+  body .v-application .secondary,
+  body .v-application .secondary.darken-1,
+  body .v-application .secondary.darken-2,
+  body .v-application .secondary.darken-3,
+  body .v-application .secondary.darken-4,
+  body .v-application .error,
+  body .v-application .info,
+  body .v-application .success,
+  body .v-application .warning { color:#FFFFFF !important; caret-color:(--lightTextColor) !important; }
+  
+  body .v-application .secondary--text { color:#607D8B !important; caret-color:var(--secondary--text) !important; }
+  body .v-application .secondary--text.darken-1 { color:#546E7A !important; caret-color:var(--secondary--text-darken-1) !important; }
+  body .v-application .secondary--text.darken-2 { color:#455A64 !important; caret-color:var(--secondary--text-darken-2) !important; }
+  body .v-application .secondary--text.darken-3 { color:#37474F !important; caret-color:var(--secondary--text-darken-3) !important; }
+  body .v-application .secondary--text.darken-4 { color:#263238 !important; caret-color:var(--secondary--text-darken-4) !important; }
+  body .v-application .secondary--text.lighten-1 { color:#78909C !important; caret-color:var(--secondary--text-lighten-1) !important; }
+  body .v-application .secondary--text.lighten-2 { color:#90A4AE !important; caret-color:var(--secondary--text-lighten-2) !important; }
+  body .v-application .secondary--text.lighten-3 { color:#B0BEC5 !important; caret-color:var(--secondary--text-lighten-3) !important; }
+  body .v-application .secondary--text.lighten-4 { color:#CFD8DC !important; caret-color:var(--secondary--text-lighten-4) !important; }
+  body .v-application .secondary--text.lighten-5 { color:#ECEFF1 !important; caret-color:var(--secondary--text-lighten-5) !important; }
+  
+  body .v-application .primary--text { color:#8BC34A !important; caret-color:var(--primary--text) !important; }
+  body .v-application .primary--text.darken-1 { color:#7CB342 !important; caret-color:var(--primary--text-darken-1) !important; }
+  body .v-application .primary--text.darken-2 { color:#689F38 !important; caret-color:var(--primary--text-darken-2) !important; }
+  body .v-application .primary--text.darken-3 { color:#558B2F !important; caret-color:var(--primary--text-darken-3) !important; }
+  body .v-application .primary--text.darken-4 { color:#33691E !important; caret-color:var(--primary--text-darken-4) !important; }
+  body .v-application .primary--text.lighten-1 { color:#9CCC65 !important; caret-color:var(--primary--text-lighten-1) !important; }
+  body .v-application .primary--text.lighten-2 { color:#AED581 !important; caret-color:var(--primary--text-lighten-2) !important; }
+  body .v-application .primary--text.lighten-3 { color:#C5E1A5 !important; caret-color:var(--primary--text-lighten-3) !important; }
+  body .v-application .primary--text.lighten-4 { color:#DCEDC8 !important; caret-color:var(--primary--text-lighten-4) !important; }
+  body .v-application .primary--text.lighten-5 { color:#F1F8E9 !important; caret-color:var(--primary--text-lighten-5) !important; }
+  
+  body .v-application .accent--text { color:#cddc39 !important; caret-color:var(--accent--text) !important; }
+  body .v-application .info--text { color:#3992D8 !important; caret-color:var(--info--text) !important; }
+  body .v-application .success--text { color:#58A25B !important; caret-color:var(--success--text) !important; }
+  body .v-application .warning--text { color:#DB871F !important; caret-color:var(--warning--text) !important; }
+  body .v-application .error--text { color:#E96767 !important; caret-color:var(--error--text) !important; }
+
+  .shellContainerTarget { background:#ECEFF1 !important; }
+
+/* STANDARD CODE FOR EVERY PLATEAU PROJECT: END */
+
+
+/* Project specific code */
+.theme--light.v-application { background:#ECEFF1 !important; }
+.v-btn { text-transform:none !important; }
+.v-navigation-drawer .v-list-item__title { color: #FFFFFF !important; font-weight: medium; font-size: 16px;}
+.v-navigation-drawer .v-icon { font-size: 28px; margin: 0 0 0 12px; color: #FFFFFF !important;}
+
+/* Class Name: stickytable */
+/* Components: v-data-table */
+/* Aciklama: Tablonun en sağındaki Actions kolonunun yatay scroll olduğunda sticky kalması */
+.stickytable table > tbody > tr > td.fixed,
+.stickytable table > thead > tr > th.fixed {
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  right: 0;
+  z-index: 1;
+  background: white;
+  border-left: 1px solid rgb(152 29 29 / 19%);
+  border-right: 1px solid rgb(152 29 29 / 19%);
+}
+
+/* PLT-11283 Güncellemesi */
+/* Aciklama: TextBox mouse imleç hatası */
+body .v-application .v-tabs
+{ caret-color: rgb(0, 0, 0) !important; }
+
+/* Class Name: popup-scroll */
+/* Pop-up içi scroll edilememesi çözümü */
+.popup-scroll {
+  height: 440px;
+  overflow: scroll!important;
+}
+
