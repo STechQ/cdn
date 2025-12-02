@@ -1,0 +1,1283 @@
+let pjson = {
+	"pJson": [
+		{
+			"T": "Messaging",
+			"P": {
+				"ID": {
+					"H": "PageComp",
+					"T": "prop"
+				},
+				"triggerOnRestored": {
+					"H": "false",
+					"T": "prop"
+				}
+			},
+			"E": {
+				"PostRender": {
+					"H": "const a = [];\r\nfor (var i = 0; i < 10; i++) {\r\n    a.push({ a: i, b: 'mustafa' });\r\n}\r\ncomponents.EdtrComp_12.items = a\r\n// components.EdtrComp_12.setItems(a)",
+					"TO": 1,
+					"HL": "TS"
+				}
+			},
+			"C": {},
+			"_Editor": {
+				"eID": "EdtrComp_1"
+			},
+			"O": {
+				"cType": "child"
+			},
+			"S": {
+				"xs-xl": {
+					"pageBackgroundColor": "#ffffff",
+					"statusBarColor": "#ffffff"
+				}
+			}
+		},
+		{
+			"T": "VContainer",
+			"P": {
+				"ID": {
+					"H": "VContainerComp",
+					"T": "prop"
+				},
+				"class": {
+					"H": "'container'",
+					"T": "class"
+				},
+				"visible": {
+					"H": "true",
+					"T": "prop"
+				},
+				"eager": {
+					"H": "true",
+					"T": "prop"
+				}
+			},
+			"E": {},
+			"C": {
+				"default": {
+					"c": [
+						{
+							"T": "VBtn",
+							"P": {
+								"ID": {
+									"H": "EdtrComp_4",
+									"T": "prop"
+								},
+								"color": {
+									"H": "'primary'",
+									"T": "prop"
+								},
+								"depressed": {
+									"H": "true",
+									"T": "prop"
+								},
+								"elevation": {
+									"H": "0",
+									"T": "prop"
+								},
+								"height": {
+									"H": "'40px'",
+									"T": "prop"
+								},
+								"visible": {
+									"H": "true",
+									"T": "prop"
+								}
+							},
+							"E": {
+								"click": {
+									"H": "let currentButton = quick.getComponent('EdtrComp_16_5');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_1');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_2');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_3');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_4');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_6');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_7');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_8');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_9');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_10');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_11');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_12');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_13');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_16');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_14');\nquick.Quick.deleteComponent(currentButton);\ncurrentButton = quick.getComponent('EdtrComp_16_15');\nquick.Quick.deleteComponent(currentButton);",
+									"P": "mouseEvent:unknown | undefined",
+									"HL": "TS"
+								}
+							},
+							"C": {
+								"default": {
+									"c": [
+										{
+											"T": "QLabel",
+											"C": {},
+											"E": {},
+											"P": {
+												"ID": {
+													"H": "EdtrComp_6",
+													"T": "prop"
+												},
+												"text": {
+													"H": "'Delete 5'",
+													"T": "prop",
+													"HL": "QS"
+												}
+											},
+											"_Editor": {
+												"eID": "EdtrComp_6"
+											},
+											"O": {
+												"cType": "child"
+											},
+											"S": {
+												"xs-xl": {
+													"marginTop": "",
+													"marginRight": "",
+													"marginBottom": "",
+													"marginLeft": "",
+													"paddingTop": "",
+													"paddingRight": "",
+													"paddingBottom": "",
+													"paddingLeft": "",
+													"fontColor": "#000000",
+													"fontFamily": "Roboto",
+													"fontSize": "16px",
+													"fontStyle": "normal",
+													"fontWeight": "400",
+													"combinedFont": "Roboto-Regular",
+													"ThemeFont": "Custom",
+													"lineHeight": "20px",
+													"textAlign": "left",
+													"textDecorationLine": "none",
+													"textDecorationStyle": "solid",
+													"textDecorationColor": "#000000"
+												}
+											}
+										}
+									],
+									"cType": "slot"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_4"
+							},
+							"S": {
+								"xs-xl": {
+									"marginTop": "",
+									"marginRight": "",
+									"marginBottom": "",
+									"marginLeft": "",
+									"paddingTop": "",
+									"paddingRight": "16px",
+									"paddingBottom": "",
+									"paddingLeft": "16px",
+									"width": "",
+									"height": "",
+									"maxWidth": "",
+									"maxHeight": "",
+									"minWidth": "",
+									"minHeight": "",
+									"unlink": "false",
+									"unlinkMax": "false",
+									"unlinkMin": "false",
+									"isSizeCollapsed": "false",
+									"fontColor": "#ffffff",
+									"fontFamily": "Roboto",
+									"fontSize": "16px",
+									"fontStyle": "normal",
+									"fontWeight": "400",
+									"combinedFont": "Roboto-Regular",
+									"ThemeFont": "Custom",
+									"lineHeight": "20px",
+									"backgroundColor": "#1976D2",
+									"disabledBackgroundColor": "rgba(0,0,0,.12)",
+									"hoverColor": "#000000",
+									"boxShadow": "",
+									"boxSizing": "",
+									"borderTopStyle": "solid",
+									"borderRightStyle": "solid",
+									"borderBottomStyle": "solid",
+									"borderLeftStyle": "solid",
+									"borderTopLeftRadius": "4px",
+									"borderTopRightRadius": "4px",
+									"borderBottomLeftRadius": "4px",
+									"borderBottomRightRadius": "4px",
+									"borderTopWidth": "0px",
+									"borderRightWidth": "0px",
+									"borderBottomWidth": "0px",
+									"borderLeftWidth": "0px",
+									"defaultBorderColor": "",
+									"sides": "Top,Right,Bottom,Left"
+								}
+							},
+							"SC": {
+								"fontColor": {
+									"VIcon": "iconColor",
+									"QLabel": "fontColor"
+								},
+								"fontStyle": {
+									"QLabel": "fontStyle"
+								},
+								"fontSize": {
+									"QLabel": "fontSize"
+								},
+								"fontFamily": {
+									"QLabel": "fontFamily"
+								},
+								"fontWeight": {
+									"QLabel": "fontWeight"
+								},
+								"combinedFont": {
+									"QLabel": "combinedFont"
+								},
+								"lineHeight": {
+									"QLabel": "lineHeight"
+								},
+								"bacgroundColor": {
+									"VIcon": "backgroundColor"
+								}
+							},
+							"O": {
+								"cType": "slot"
+							}
+						},
+						{
+							"T": "VBtn",
+							"P": {
+								"ID": {
+									"H": "EdtrComp_7",
+									"T": "prop"
+								},
+								"color": {
+									"H": "'primary'",
+									"T": "prop"
+								},
+								"depressed": {
+									"H": "true",
+									"T": "prop"
+								},
+								"elevation": {
+									"H": "0",
+									"T": "prop"
+								},
+								"height": {
+									"H": "'40px'",
+									"T": "prop"
+								},
+								"visible": {
+									"H": "true",
+									"T": "prop"
+								}
+							},
+							"E": {
+								"click": {
+									"H": "const currentLabel = quick.getComponent('EdtrComp_19_6');\nconst currentButton = quick.getComponent('EdtrComp_16_6');\ncurrentButton.style.backgroundColor = '#eeeeee';\ncurrentLabel.style.color = 'purple'",
+									"P": "mouseEvent:unknown | undefined",
+									"HL": "TS"
+								}
+							},
+							"C": {
+								"default": {
+									"c": [
+										{
+											"T": "QLabel",
+											"C": {},
+											"E": {},
+											"P": {
+												"ID": {
+													"H": "EdtrComp_8",
+													"T": "prop"
+												},
+												"text": {
+													"H": "'Change 6'",
+													"T": "prop",
+													"HL": "QS"
+												}
+											},
+											"_Editor": {
+												"eID": "EdtrComp_8"
+											},
+											"O": {
+												"cType": "child"
+											},
+											"S": {
+												"xs-xl": {
+													"marginTop": "",
+													"marginRight": "",
+													"marginBottom": "",
+													"marginLeft": "",
+													"paddingTop": "",
+													"paddingRight": "",
+													"paddingBottom": "",
+													"paddingLeft": "",
+													"fontColor": "#000000",
+													"fontFamily": "Roboto",
+													"fontSize": "16px",
+													"fontStyle": "normal",
+													"fontWeight": "400",
+													"combinedFont": "Roboto-Regular",
+													"ThemeFont": "Custom",
+													"lineHeight": "20px",
+													"textAlign": "left",
+													"textDecorationLine": "none",
+													"textDecorationStyle": "solid",
+													"textDecorationColor": "#000000"
+												}
+											}
+										}
+									],
+									"cType": "slot"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_7"
+							},
+							"S": {
+								"xs-xl": {
+									"marginTop": "",
+									"marginRight": "",
+									"marginBottom": "",
+									"marginLeft": "",
+									"paddingTop": "",
+									"paddingRight": "16px",
+									"paddingBottom": "",
+									"paddingLeft": "16px",
+									"width": "",
+									"height": "",
+									"maxWidth": "",
+									"maxHeight": "",
+									"minWidth": "",
+									"minHeight": "",
+									"unlink": "false",
+									"unlinkMax": "false",
+									"unlinkMin": "false",
+									"isSizeCollapsed": "false",
+									"fontColor": "#ffffff",
+									"fontFamily": "Roboto",
+									"fontSize": "16px",
+									"fontStyle": "normal",
+									"fontWeight": "400",
+									"combinedFont": "Roboto-Regular",
+									"ThemeFont": "Custom",
+									"lineHeight": "20px",
+									"backgroundColor": "#1976D2",
+									"disabledBackgroundColor": "rgba(0,0,0,.12)",
+									"hoverColor": "#000000",
+									"boxShadow": "",
+									"boxSizing": "",
+									"borderTopStyle": "solid",
+									"borderRightStyle": "solid",
+									"borderBottomStyle": "solid",
+									"borderLeftStyle": "solid",
+									"borderTopLeftRadius": "4px",
+									"borderTopRightRadius": "4px",
+									"borderBottomLeftRadius": "4px",
+									"borderBottomRightRadius": "4px",
+									"borderTopWidth": "0px",
+									"borderRightWidth": "0px",
+									"borderBottomWidth": "0px",
+									"borderLeftWidth": "0px",
+									"defaultBorderColor": "",
+									"sides": "Top,Right,Bottom,Left"
+								}
+							},
+							"SC": {
+								"fontColor": {
+									"VIcon": "iconColor",
+									"QLabel": "fontColor"
+								},
+								"fontStyle": {
+									"QLabel": "fontStyle"
+								},
+								"fontSize": {
+									"QLabel": "fontSize"
+								},
+								"fontFamily": {
+									"QLabel": "fontFamily"
+								},
+								"fontWeight": {
+									"QLabel": "fontWeight"
+								},
+								"combinedFont": {
+									"QLabel": "combinedFont"
+								},
+								"lineHeight": {
+									"QLabel": "lineHeight"
+								},
+								"bacgroundColor": {
+									"VIcon": "backgroundColor"
+								}
+							},
+							"O": {
+								"cType": "slot"
+							}
+						},
+						{
+							"T": "InfiniteScroll",
+							"P": {
+								"ID": {
+									"H": "EdtrComp_12",
+									"T": "prop"
+								},
+								"componentCount": {
+									"H": "10",
+									"T": "prop",
+									"HL": "QS"
+								}
+							},
+							"E": {
+								"onIntersection": {
+									"H": "quick.EM.trace(currentIndex);\r\ndebugger;\r\nconst a = [];\r\ncurrentIndex > 30 && quick.return('');\r\nfor (var i = currentIndex; i < currentIndex +10; i++) {\r\n    a.push({ a: i });\r\n}\r\ncomponents.EdtrComp_12.addItems(a);\r\n// components.EdtrComp_12.componentCount += 5;",
+									"P": "currentIndex:any",
+									"HL": "TS"
+								}
+							},
+							"C": {
+								"default": {
+									"c": [
+										{
+											"T": "VBtn",
+											"P": {
+												"ID": {
+													"H": "EdtrComp_16",
+													"T": "prop",
+													"HL": "QS"
+												},
+												"color": {
+													"H": "'primary'",
+													"T": "prop"
+												},
+												"depressed": {
+													"H": "true",
+													"T": "prop"
+												},
+												"elevation": {
+													"H": "0",
+													"T": "prop"
+												},
+												"height": {
+													"H": "'40px'",
+													"T": "prop"
+												},
+												"visible": {
+													"H": "true",
+													"T": "prop"
+												}
+											},
+											"E": {
+												"click": {
+													"H": "declare var data;\nquick.EM.trace(quick.this);\nconst currentLabel = quick.getComponent('EdtrComp_19_' + data.newCompID);\nconst currentButton = quick.getComponent('EdtrComp_16_' + data.newCompID);\ncurrentButton.style.backgroundColor = 'red';\ncurrentLabel.style.color = 'blue'",
+													"P": "mouseEvent:unknown | undefined",
+													"HL": "TS"
+												}
+											},
+											"C": {
+												"default": {
+													"c": [
+														{
+															"T": "QLabel",
+															"C": {},
+															"E": {},
+															"P": {
+																"ID": {
+																	"H": "EdtrComp_19",
+																	"T": "prop",
+																	"HL": "QS"
+																},
+																"text": {
+																	"H": "data.a",
+																	"T": "prop",
+																	"HL": "QS"
+																}
+															},
+															"_Editor": {
+																"eID": "EdtrComp_3"
+															},
+															"O": {
+																"cType": "child"
+															},
+															"S": {
+																"xs-xl": {
+																	"marginTop": "",
+																	"marginRight": "",
+																	"marginBottom": "",
+																	"marginLeft": "",
+																	"paddingTop": "",
+																	"paddingRight": "",
+																	"paddingBottom": "",
+																	"paddingLeft": "",
+																	"fontColor": "#000000",
+																	"fontFamily": "Roboto",
+																	"fontSize": "16px",
+																	"fontStyle": "normal",
+																	"fontWeight": "400",
+																	"combinedFont": "Roboto-Regular",
+																	"ThemeFont": "Custom",
+																	"lineHeight": "20px",
+																	"textAlign": "start",
+																	"textDecorationLine": "none",
+																	"textDecorationStyle": "solid",
+																	"textDecorationColor": "#000000"
+																}
+															}
+														}
+													],
+													"cType": "slot"
+												}
+											},
+											"_Editor": {
+												"eID": "EdtrComp_2"
+											},
+											"S": {
+												"xs-xl": {
+													"marginTop": "",
+													"marginRight": "",
+													"marginBottom": "",
+													"marginLeft": "",
+													"paddingTop": "",
+													"paddingRight": "16px",
+													"paddingBottom": "",
+													"paddingLeft": "16px",
+													"width": "",
+													"height": "",
+													"maxWidth": "",
+													"maxHeight": "",
+													"minWidth": "",
+													"minHeight": "",
+													"unlink": "false",
+													"unlinkMax": "false",
+													"unlinkMin": "false",
+													"isSizeCollapsed": "false",
+													"fontColor": "#ffffff",
+													"fontFamily": "Roboto",
+													"fontSize": "16px",
+													"fontStyle": "normal",
+													"fontWeight": "400",
+													"combinedFont": "Roboto-Regular",
+													"ThemeFont": "Custom",
+													"lineHeight": "20px",
+													"backgroundColor": "#32d219",
+													"disabledBackgroundColor": "rgba(0,0,0,.12)",
+													"hoverColor": "#000000",
+													"boxShadow": "",
+													"boxSizing": "",
+													"borderTopStyle": "solid",
+													"borderRightStyle": "solid",
+													"borderBottomStyle": "solid",
+													"borderLeftStyle": "solid",
+													"borderTopLeftRadius": "4px",
+													"borderTopRightRadius": "4px",
+													"borderBottomLeftRadius": "4px",
+													"borderBottomRightRadius": "4px",
+													"borderTopWidth": "0px",
+													"borderRightWidth": "0px",
+													"borderBottomWidth": "0px",
+													"borderLeftWidth": "0px",
+													"defaultBorderColor": "",
+													"sides": "Top,Right,Bottom,Left"
+												}
+											},
+											"SC": {
+												"fontColor": {
+													"VIcon": "iconColor",
+													"QLabel": "fontColor"
+												},
+												"fontStyle": {
+													"QLabel": "fontStyle"
+												},
+												"fontSize": {
+													"QLabel": "fontSize"
+												},
+												"fontFamily": {
+													"QLabel": "fontFamily"
+												},
+												"fontWeight": {
+													"QLabel": "fontWeight"
+												},
+												"combinedFont": {
+													"QLabel": "combinedFont"
+												},
+												"lineHeight": {
+													"QLabel": "lineHeight"
+												},
+												"bacgroundColor": {
+													"VIcon": "backgroundColor"
+												}
+											},
+											"O": {
+												"cType": "slot"
+											}
+										}
+									],
+									"cType": "scopedSlot"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_12"
+							},
+							"O": {
+								"cType": "slot"
+							},
+							"S": {
+								"xs-xl": {
+									"sides": "Top,Right,Bottom,Left",
+									"borderTopWidth": "10px",
+									"borderTopStyle": "solid",
+									"borderBottomWidth": "10px",
+									"borderBottomStyle": "solid",
+									"borderLeftWidth": "10px",
+									"borderLeftStyle": "solid",
+									"borderRightWidth": "10px",
+									"borderRightStyle": "solid",
+									"borderColor": "#387a39",
+									"height": "400px"
+								}
+							}
+						}
+					],
+					"cType": "slot"
+				}
+			},
+			"_Editor": {
+				"eID": "EdtrComp_5"
+			},
+			"O": {
+				"cType": "slot"
+			}
+		}
+	],
+	"cJson": [
+		{
+			"T": "Messaging",
+			"P": {
+				"ID": {
+					"H": "PageComp",
+					"T": "prop"
+				},
+				"triggerOnRestored": {
+					"H": "╬false╩╩",
+					"T": "prop"
+				}
+			},
+			"E": {
+				"PostRender": {
+					"H": "Object.defineProperty(exports, \"__esModule\", { value: true });\r\n;\r\nvar a = [];\r\nfor (var i = 0; i < 10; i++) {\r\n    a.push({ a: i, b: 'mustafa' });\r\n}\r\ncomponents.EdtrComp_12.items = a;\r\n",
+					"TO": 1,
+					"HL": "JS"
+				}
+			},
+			"C": {},
+			"_Editor": {
+				"eID": "EdtrComp_1"
+			},
+			"O": {
+				"cType": "child",
+				"compDomClasses": "newDropBorder"
+			},
+			"S": {
+				"xs-xl": {
+					"pageBackgroundColor": "#ffffff",
+					"statusBarColor": "#ffffff"
+				}
+			}
+		},
+		{
+			"T": "VContainer",
+			"P": {
+				"ID": {
+					"H": "VContainerComp",
+					"T": "prop"
+				},
+				"class": {
+					"H": "╬'container'╩╩",
+					"T": "class"
+				},
+				"visible": {
+					"H": "╬true╩╩",
+					"T": "prop"
+				},
+				"eager": {
+					"H": "╬true╩╩",
+					"T": "prop"
+				}
+			},
+			"E": {},
+			"C": {
+				"default": {
+					"c": [
+						{
+							"T": "VBtn",
+							"P": {
+								"ID": {
+									"H": "EdtrComp_4",
+									"T": "prop"
+								},
+								"color": {
+									"H": "╬'primary'╩╩",
+									"T": "prop"
+								},
+								"depressed": {
+									"H": "╬true╩╩",
+									"T": "prop"
+								},
+								"elevation": {
+									"H": "╬0╩╩",
+									"T": "prop"
+								},
+								"height": {
+									"H": "╬'40px'╩╩",
+									"T": "prop"
+								},
+								"visible": {
+									"H": "╬true╩╩",
+									"T": "prop"
+								}
+							},
+							"E": {
+								"click": {
+									"H": "Object.defineProperty(exports, \"__esModule\", { value: true });\r\nvar currentButton = quick.getComponent('EdtrComp_16_5');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_1');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_2');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_3');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_4');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_6');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_7');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_8');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_9');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_10');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_11');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_12');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_13');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_16');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_14');\r\nquick.Quick.deleteComponent(currentButton);\r\ncurrentButton = quick.getComponent('EdtrComp_16_15');\r\nquick.Quick.deleteComponent(currentButton);\r\n",
+									"P": "mouseEvent:unknown | undefined",
+									"HL": "JS"
+								}
+							},
+							"C": {
+								"default": {
+									"c": [
+										{
+											"T": "QLabel",
+											"C": {},
+											"E": {},
+											"P": {
+												"ID": {
+													"H": "EdtrComp_6",
+													"T": "prop"
+												},
+												"text": {
+													"H": "╬'Delete 5'╩╩",
+													"T": "prop",
+													"HL": "QS"
+												}
+											},
+											"_Editor": {
+												"eID": "EdtrComp_6"
+											},
+											"O": {
+												"cType": "child",
+												"compDomClasses": "q-label newDropBorder"
+											},
+											"S": {
+												"xs-xl": {
+													"marginTop": "",
+													"marginRight": "",
+													"marginBottom": "",
+													"marginLeft": "",
+													"paddingTop": "",
+													"paddingRight": "",
+													"paddingBottom": "",
+													"paddingLeft": "",
+													"ThemeFont": "Custom",
+													"textAlign": "left",
+													"textDecorationLine": "none",
+													"textDecorationStyle": "solid",
+													"textDecorationColor": "#000000",
+													"fontColor": "#ffffff",
+													"fontStyle": "normal",
+													"fontSize": "16px",
+													"fontFamily": "Roboto",
+													"fontWeight": "400",
+													"combinedFont": "Roboto-Regular",
+													"lineHeight": "20px"
+												}
+											}
+										}
+									],
+									"cType": "slot"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_4"
+							},
+							"S": {
+								"xs-xl": {
+									"marginTop": "",
+									"marginRight": "",
+									"marginBottom": "",
+									"marginLeft": "",
+									"paddingTop": "",
+									"paddingRight": "16px",
+									"paddingBottom": "",
+									"paddingLeft": "16px",
+									"width": "",
+									"height": "",
+									"maxWidth": "",
+									"maxHeight": "",
+									"minWidth": "",
+									"minHeight": "",
+									"unlink": "false",
+									"unlinkMax": "false",
+									"unlinkMin": "false",
+									"isSizeCollapsed": "false",
+									"fontColor": "#ffffff",
+									"fontFamily": "Roboto",
+									"fontSize": "16px",
+									"fontStyle": "normal",
+									"fontWeight": "400",
+									"combinedFont": "Roboto-Regular",
+									"ThemeFont": "Custom",
+									"lineHeight": "20px",
+									"backgroundColor": "#1976D2",
+									"disabledBackgroundColor": "rgba(0,0,0,.12)",
+									"hoverColor": "#000000",
+									"boxShadow": "",
+									"boxSizing": "",
+									"borderTopStyle": "solid",
+									"borderRightStyle": "solid",
+									"borderBottomStyle": "solid",
+									"borderLeftStyle": "solid",
+									"borderTopLeftRadius": "4px",
+									"borderTopRightRadius": "4px",
+									"borderBottomLeftRadius": "4px",
+									"borderBottomRightRadius": "4px",
+									"borderTopWidth": "0px",
+									"borderRightWidth": "0px",
+									"borderBottomWidth": "0px",
+									"borderLeftWidth": "0px",
+									"defaultBorderColor": "",
+									"sides": "Top,Right,Bottom,Left"
+								}
+							},
+							"SC": {
+								"fontColor": {
+									"VIcon": "iconColor",
+									"QLabel": "fontColor"
+								},
+								"fontStyle": {
+									"QLabel": "fontStyle"
+								},
+								"fontSize": {
+									"QLabel": "fontSize"
+								},
+								"fontFamily": {
+									"QLabel": "fontFamily"
+								},
+								"fontWeight": {
+									"QLabel": "fontWeight"
+								},
+								"combinedFont": {
+									"QLabel": "combinedFont"
+								},
+								"lineHeight": {
+									"QLabel": "lineHeight"
+								},
+								"bacgroundColor": {
+									"VIcon": "backgroundColor"
+								}
+							},
+							"O": {
+								"cType": "slot",
+								"compDomClasses": "v-btn v-btn--depressed theme--light elevation-0 v-size--default primary newDropBorder"
+							}
+						},
+						{
+							"T": "VBtn",
+							"P": {
+								"ID": {
+									"H": "EdtrComp_7",
+									"T": "prop"
+								},
+								"color": {
+									"H": "╬'primary'╩╩",
+									"T": "prop"
+								},
+								"depressed": {
+									"H": "╬true╩╩",
+									"T": "prop"
+								},
+								"elevation": {
+									"H": "╬0╩╩",
+									"T": "prop"
+								},
+								"height": {
+									"H": "╬'40px'╩╩",
+									"T": "prop"
+								},
+								"visible": {
+									"H": "╬true╩╩",
+									"T": "prop"
+								}
+							},
+							"E": {
+								"click": {
+									"H": "Object.defineProperty(exports, \"__esModule\", { value: true });\r\nvar currentLabel = quick.getComponent('EdtrComp_19_6');\r\nvar currentButton = quick.getComponent('EdtrComp_16_6');\r\ncurrentButton.style.backgroundColor = '#eeeeee';\r\ncurrentLabel.style.color = 'purple';\r\n",
+									"P": "mouseEvent:unknown | undefined",
+									"HL": "JS"
+								}
+							},
+							"C": {
+								"default": {
+									"c": [
+										{
+											"T": "QLabel",
+											"C": {},
+											"E": {},
+											"P": {
+												"ID": {
+													"H": "EdtrComp_8",
+													"T": "prop"
+												},
+												"text": {
+													"H": "╬'Change 6'╩╩",
+													"T": "prop",
+													"HL": "QS"
+												}
+											},
+											"_Editor": {
+												"eID": "EdtrComp_8"
+											},
+											"O": {
+												"cType": "child",
+												"compDomClasses": "q-label newDropBorder"
+											},
+											"S": {
+												"xs-xl": {
+													"marginTop": "",
+													"marginRight": "",
+													"marginBottom": "",
+													"marginLeft": "",
+													"paddingTop": "",
+													"paddingRight": "",
+													"paddingBottom": "",
+													"paddingLeft": "",
+													"ThemeFont": "Custom",
+													"textAlign": "left",
+													"textDecorationLine": "none",
+													"textDecorationStyle": "solid",
+													"textDecorationColor": "#000000",
+													"fontColor": "#ffffff",
+													"fontStyle": "normal",
+													"fontSize": "16px",
+													"fontFamily": "Roboto",
+													"fontWeight": "400",
+													"combinedFont": "Roboto-Regular",
+													"lineHeight": "20px"
+												}
+											}
+										}
+									],
+									"cType": "slot"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_7"
+							},
+							"S": {
+								"xs-xl": {
+									"marginTop": "",
+									"marginRight": "",
+									"marginBottom": "",
+									"marginLeft": "",
+									"paddingTop": "",
+									"paddingRight": "16px",
+									"paddingBottom": "",
+									"paddingLeft": "16px",
+									"width": "",
+									"height": "",
+									"maxWidth": "",
+									"maxHeight": "",
+									"minWidth": "",
+									"minHeight": "",
+									"unlink": "false",
+									"unlinkMax": "false",
+									"unlinkMin": "false",
+									"isSizeCollapsed": "false",
+									"fontColor": "#ffffff",
+									"fontFamily": "Roboto",
+									"fontSize": "16px",
+									"fontStyle": "normal",
+									"fontWeight": "400",
+									"combinedFont": "Roboto-Regular",
+									"ThemeFont": "Custom",
+									"lineHeight": "20px",
+									"backgroundColor": "#1976D2",
+									"disabledBackgroundColor": "rgba(0,0,0,.12)",
+									"hoverColor": "#000000",
+									"boxShadow": "",
+									"boxSizing": "",
+									"borderTopStyle": "solid",
+									"borderRightStyle": "solid",
+									"borderBottomStyle": "solid",
+									"borderLeftStyle": "solid",
+									"borderTopLeftRadius": "4px",
+									"borderTopRightRadius": "4px",
+									"borderBottomLeftRadius": "4px",
+									"borderBottomRightRadius": "4px",
+									"borderTopWidth": "0px",
+									"borderRightWidth": "0px",
+									"borderBottomWidth": "0px",
+									"borderLeftWidth": "0px",
+									"defaultBorderColor": "",
+									"sides": "Top,Right,Bottom,Left"
+								}
+							},
+							"SC": {
+								"fontColor": {
+									"VIcon": "iconColor",
+									"QLabel": "fontColor"
+								},
+								"fontStyle": {
+									"QLabel": "fontStyle"
+								},
+								"fontSize": {
+									"QLabel": "fontSize"
+								},
+								"fontFamily": {
+									"QLabel": "fontFamily"
+								},
+								"fontWeight": {
+									"QLabel": "fontWeight"
+								},
+								"combinedFont": {
+									"QLabel": "combinedFont"
+								},
+								"lineHeight": {
+									"QLabel": "lineHeight"
+								},
+								"bacgroundColor": {
+									"VIcon": "backgroundColor"
+								}
+							},
+							"O": {
+								"cType": "slot",
+								"compDomClasses": "v-btn v-btn--depressed theme--light elevation-0 v-size--default primary newDropBorder"
+							}
+						},
+						{
+							"T": "InfiniteScroll",
+							"P": {
+								"ID": {
+									"H": "EdtrComp_12",
+									"T": "prop"
+								},
+								"componentCount": {
+									"H": "╬10╩╩",
+									"T": "prop",
+									"HL": "QS"
+								}
+							},
+							"E": {
+								"onIntersection": {
+									"H": "Object.defineProperty(exports, \"__esModule\", { value: true });\r\nquick.EM.trace(currentIndex);\r\ndebugger;\r\nvar a = [];\r\ncurrentIndex > 30 && quick.return('');\r\nfor (var i = currentIndex; i < currentIndex + 10; i++) {\r\n    a.push({ a: i });\r\n}\r\ncomponents.EdtrComp_12.addItems(a);\r\n",
+									"P": "currentIndex:any",
+									"HL": "JS"
+								}
+							},
+							"C": {
+								"default": {
+									"c": [
+										{
+											"T": "VBtn",
+											"P": {
+												"ID": {
+													"H": "EdtrComp_16",
+													"T": "prop",
+													"HL": "QS"
+												},
+												"color": {
+													"H": "╬'primary'╩╩",
+													"T": "prop"
+												},
+												"depressed": {
+													"H": "╬true╩╩",
+													"T": "prop"
+												},
+												"elevation": {
+													"H": "╬0╩╩",
+													"T": "prop"
+												},
+												"height": {
+													"H": "╬'40px'╩╩",
+													"T": "prop"
+												},
+												"visible": {
+													"H": "╬true╩╩",
+													"T": "prop"
+												}
+											},
+											"E": {
+												"click": {
+													"H": "Object.defineProperty(exports, \"__esModule\", { value: true });\r\nquick.EM.trace(quick.this);\r\nvar currentLabel = quick.getComponent('EdtrComp_19_' + data.newCompID);\r\nvar currentButton = quick.getComponent('EdtrComp_16_' + data.newCompID);\r\ncurrentButton.style.backgroundColor = 'red';\r\ncurrentLabel.style.color = 'blue';\r\n",
+													"P": "mouseEvent:unknown | undefined",
+													"HL": "JS"
+												}
+											},
+											"C": {
+												"default": {
+													"c": [
+														{
+															"T": "QLabel",
+															"C": {},
+															"E": {},
+															"P": {
+																"ID": {
+																	"H": "EdtrComp_19",
+																	"T": "prop",
+																	"HL": "QS"
+																},
+																"text": {
+																	"H": "╬.╣data╩╠a╩╩╩",
+																	"T": "prop",
+																	"HL": "QS"
+																}
+															},
+															"_Editor": {
+																"eID": "EdtrComp_3"
+															},
+															"O": {
+																"cType": "child"
+															},
+															"S": {
+																"xs-xl": {
+																	"marginTop": "",
+																	"marginRight": "",
+																	"marginBottom": "",
+																	"marginLeft": "",
+																	"paddingTop": "",
+																	"paddingRight": "",
+																	"paddingBottom": "",
+																	"paddingLeft": "",
+																	"fontColor": "#000000",
+																	"fontFamily": "Roboto",
+																	"fontSize": "16px",
+																	"fontStyle": "normal",
+																	"fontWeight": "400",
+																	"combinedFont": "Roboto-Regular",
+																	"ThemeFont": "Custom",
+																	"lineHeight": "20px",
+																	"textAlign": "start",
+																	"textDecorationLine": "none",
+																	"textDecorationStyle": "solid",
+																	"textDecorationColor": "#000000"
+																}
+															}
+														}
+													],
+													"cType": "slot"
+												}
+											},
+											"_Editor": {
+												"eID": "EdtrComp_2"
+											},
+											"S": {
+												"xs-xl": {
+													"marginTop": "",
+													"marginRight": "",
+													"marginBottom": "",
+													"marginLeft": "",
+													"paddingTop": "",
+													"paddingRight": "16px",
+													"paddingBottom": "",
+													"paddingLeft": "16px",
+													"width": "",
+													"height": "",
+													"maxWidth": "",
+													"maxHeight": "",
+													"minWidth": "",
+													"minHeight": "",
+													"unlink": "false",
+													"unlinkMax": "false",
+													"unlinkMin": "false",
+													"isSizeCollapsed": "false",
+													"fontColor": "#ffffff",
+													"fontFamily": "Roboto",
+													"fontSize": "16px",
+													"fontStyle": "normal",
+													"fontWeight": "400",
+													"combinedFont": "Roboto-Regular",
+													"ThemeFont": "Custom",
+													"lineHeight": "20px",
+													"backgroundColor": "#32d219",
+													"disabledBackgroundColor": "rgba(0,0,0,.12)",
+													"hoverColor": "#000000",
+													"boxShadow": "",
+													"boxSizing": "",
+													"borderTopStyle": "solid",
+													"borderRightStyle": "solid",
+													"borderBottomStyle": "solid",
+													"borderLeftStyle": "solid",
+													"borderTopLeftRadius": "4px",
+													"borderTopRightRadius": "4px",
+													"borderBottomLeftRadius": "4px",
+													"borderBottomRightRadius": "4px",
+													"borderTopWidth": "0px",
+													"borderRightWidth": "0px",
+													"borderBottomWidth": "0px",
+													"borderLeftWidth": "0px",
+													"defaultBorderColor": "",
+													"sides": "Top,Right,Bottom,Left"
+												}
+											},
+											"SC": {
+												"fontColor": {
+													"VIcon": "iconColor",
+													"QLabel": "fontColor"
+												},
+												"fontStyle": {
+													"QLabel": "fontStyle"
+												},
+												"fontSize": {
+													"QLabel": "fontSize"
+												},
+												"fontFamily": {
+													"QLabel": "fontFamily"
+												},
+												"fontWeight": {
+													"QLabel": "fontWeight"
+												},
+												"combinedFont": {
+													"QLabel": "combinedFont"
+												},
+												"lineHeight": {
+													"QLabel": "lineHeight"
+												},
+												"bacgroundColor": {
+													"VIcon": "backgroundColor"
+												}
+											},
+											"O": {
+												"cType": "slot"
+											}
+										}
+									],
+									"cType": "scopedSlot"
+								}
+							},
+							"_Editor": {
+								"eID": "EdtrComp_12"
+							},
+							"O": {
+								"cType": "slot",
+								"compDomClasses": "newDropBorder"
+							},
+							"S": {
+								"xs-xl": {
+									"sides": "Top,Right,Bottom,Left",
+									"borderTopWidth": "10px",
+									"borderTopStyle": "solid",
+									"borderBottomWidth": "10px",
+									"borderBottomStyle": "solid",
+									"borderLeftWidth": "10px",
+									"borderLeftStyle": "solid",
+									"borderRightWidth": "10px",
+									"borderRightStyle": "solid",
+									"borderColor": "#387a39",
+									"height": "400px"
+								}
+							}
+						}
+					],
+					"cType": "slot"
+				}
+			},
+			"_Editor": {
+				"eID": "EdtrComp_5"
+			},
+			"O": {
+				"cType": "slot",
+				"compDomClasses": "container newDropBorder"
+			}
+		}
+	],
+	"lrids": {},
+	"clrids": {},
+	"opt": {
+		"V": 2.2
+	}
+};
+export default pjson
