@@ -1,0 +1,75 @@
+div .v-application #cbmonitoring_container div.v-input {
+    padding: 0px !important;
+}
+
+div .v-application #cbmonitoring_container .col {
+    padding-bottom: 8px !important;
+    padding-top: 8px !important;
+}
+
+#cbmonitoring_container .v-expansion-panel-content__wrap {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+
+div .v-application #cbmonitoring_container .v-data-table>.v-data-table__wrapper>table>tbody>tr>td,
+div .v-application #cbmonitoring_container .v-data-table>.v-data-table__wrapper>table>tbody>tr>th,
+div .v-application #cbmonitoring_container .v-data-table>.v-data-table__wrapper>table>thead>tr>td,
+div .v-application #cbmonitoring_container .v-data-table>.v-data-table__wrapper>table>thead>tr>th,
+div .v-application #cbmonitoring_container .v-data-table>.v-data-table__wrapper>table>tfoot>tr>td,
+div .v-application #cbmonitoring_container .v-data-table>.v-data-table__wrapper>table>tfoot>tr>th {
+    padding: 0px 4px !important;
+}
+
+#cbmonito .v-data-table thead tr th {
+    max-width: 100px;
+}
+
+div .v-application #cbmonitoring_container .v-btn span {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    display: inline-block !important;
+    width: 120px;
+    text-align: center !important;
+}
+
+div .v-application #cbmonitoring_container .v-btn:not(.v-data-table .v-btn) {
+    width: 150px;
+}
+
+#cbmonitoring_container .v-menu__content.theme--light.menuable__content__active .v-list-item {
+    padding: 0 4px !important;
+}
+
+#cbmonitoring_container div .v-application .v-menu__content .v-list-item--link .v-list-item__title {
+    font-size: 11px !important;
+}
+
+#cbmonitoring_container .v-menu__content.theme--light.menuable__content__active.v-autocomplete__content {
+    min-width: 450px !important;
+}
+
+#cbmonitoring_container .v-data-table th {
+    white-space: unset;
+}
+
+#cbmonitoring_container .v-application--is-ltr .v-list-item__action:first-child, #cbmonitoring_container .v-application--is-ltr .v-list-item__icon:first-child {
+    margin: 4px;
+}
+
+#cbmonitoring_container .v-menu__content .v-list .v-input:first-child {
+    margin-top: 4px !important;
+}
+
+#cbmonitoring_container .v-menu__content .v-list .v-input label {
+    position: unset !important;
+}
+
+div .v-application #cbmonitoring_container .v-menu__content .v-list-item .v-list-item__title {
+    font-size: 12px !important;
+}
+
+#cbmonitoring_container .v-menu__content .v-list-item__action {
+    margin-right: 4px;
+}
